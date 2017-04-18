@@ -1,0 +1,166 @@
+2017-Apr-17 13:37:16.223324 : PosixMain.cpp : Status(4):
+	adatper config not set
+2017-Apr-17 13:37:16.223582 : CBroker.cpp : Notice(5):
+	Phase: gm for 530ms offset 00:00:00
+2017-Apr-17 13:37:16.223943 : CAdapterFactory.cpp : Status(4):
+	Plug and play devices disabled.
+2017-Apr-17 13:37:16.223975 : CAdapterFactory.cpp : Status(4):
+	MQTT client entered
+2017-Apr-17 13:37:16.385213 : CMqttAdapter.cpp : Notice(5):
+	Subscribed to MQTT topic SST/1/JSON
+2017-Apr-17 13:37:16.395447 : CMqttAdapter.cpp : Notice(5):
+	Subscribed to MQTT topic SST/1/AOUT/#
+2017-Apr-17 13:37:16.405672 : CMqttAdapter.cpp : Notice(5):
+	Subscribed to MQTT topic SST/1/DOUT/#
+2017-Apr-17 13:37:16.415895 : CMqttAdapter.cpp : Notice(5):
+	Subscribed to MQTT topic SST/1/ACK
+2017-Apr-17 13:37:16.426118 : CMqttAdapter.cpp : Notice(5):
+	Subscribed to MQTT topic DESD/1/JSON
+2017-Apr-17 13:37:16.436345 : CMqttAdapter.cpp : Notice(5):
+	Subscribed to MQTT topic DESD/1/AOUT/#
+2017-Apr-17 13:37:16.446521 : CMqttAdapter.cpp : Notice(5):
+	Subscribed to MQTT topic DESD/1/DOUT/#
+2017-Apr-17 13:37:16.456754 : CMqttAdapter.cpp : Notice(5):
+	Subscribed to MQTT topic DESD/1/ACK
+2017-Apr-17 13:37:16.456866 : CAdapterFactory.cpp : Status(4):
+	MQTT client enabled 4.
+2017-Apr-17 13:37:16.456920 : CAdapterFactory.cpp : Status(4):
+	System will start without adapters.
+2017-Apr-17 13:37:16.457006 : CAdapterFactory.cpp : Status(4):
+	Starting the adapter i/o service.
+2017-Apr-17 13:37:16.497292 : CMqttAdapter.cpp : Status(4):
+	MQTT message receivedjoin/DGIClient/1:Connect
+2017-Apr-17 13:37:16.497364 : CMqttAdapter.cpp : Status(4):
+	MQTT message receivedjoin/DGIClient/1:Connect
+2017-Apr-17 13:37:16.497435 : CMqttAdapter.cpp : Status(4):
+	Received a join message for device: DGIClient
+2017-Apr-17 13:37:16.753682 : CBroker.cpp : Notice(5):
+	Aligned phase to 2 (was 1) for 2447 ms
+2017-Apr-17 13:37:16.753757 : CBroker.cpp : Notice(5):
+	Phase: vvc for 2447ms offset 00:00:00
+2017-Apr-17 13:37:16.753808 : CBroker.cpp : Notice(5):
+	Changed Phase: expiring next time timers for gm
+ --------------------VVC ---------------------------------
+loaded okay
+SSTs under Slave #1: SST1 SST2 SST3 
+
+2017-Apr-17 13:37:19.200985 : CBroker.cpp : Notice(5):
+	Aligned phase to 0 (was 0) for 530 ms
+2017-Apr-17 13:37:19.201092 : CBroker.cpp : Notice(5):
+	Phase: gm for 530ms offset 00:00:00
+2017-Apr-17 13:37:19.201154 : CBroker.cpp : Notice(5):
+	Changed Phase: expiring next time timers for vvc
+2017-Apr-17 13:37:19.201188 : CBroker.cpp : Notice(5):
+	Scheduling task for next time timer: 2
+2017-Apr-17 13:37:19.201228 : GroupManagement.cpp : Notice(5):
+	Registering peer explosion.ece.ncsu.edu:5001
+2017-Apr-17 13:37:19.201263 : GroupManagement.cpp : Notice(5):
+	Registering peer explosion.ece.ncsu.edu:5002
+2017-Apr-17 13:37:19.201295 : GroupManagement.cpp : Notice(5):
+	All peers added 2
+2017-Apr-17 13:37:19.201326 : GroupManagement.cpp : Notice(5):
+	! explosion.ece.ncsu.edu:5001 added to peer set
+2017-Apr-17 13:37:19.201357 : GroupManagement.cpp : Notice(5):
+	! explosion.ece.ncsu.edu:5002 added to peer set
+2017-Apr-17 13:37:19.201388 : GroupManagement.cpp : Notice(5):
+	+ State Change ELECTION : 441
+2017-Apr-17 13:37:19.201420 : GroupManagement.cpp : Notice(5):
+	Changed group: 1804289384 (explosion.ece.ncsu.edu:5002)
+2017-Apr-17 13:37:19.201451 : GroupManagement.cpp : Notice(5):
+	+ State Change REORGANIZATION : 454
+2017-Apr-17 13:37:19.201481 : GroupManagement.cpp : Notice(5):
+	+ State Change NORMAL : 457
+2017-Apr-17 13:37:19.201807 : CConnectionManager.cpp : Warn(3):
+	EP = 127.0.0.1:5002
+2017-Apr-17 13:37:19.202488 : GroupManagement.cpp : Notice(5):
+	Updated peer set (UPDATE)
+2017-Apr-17 13:37:19.732538 : CBroker.cpp : Notice(5):
+	Aligned phase to 1 (was 1) for 318 ms
+2017-Apr-17 13:37:19.732623 : CBroker.cpp : Notice(5):
+	Phase: sc for 318ms offset 00:00:00
+2017-Apr-17 13:37:19.732677 : CBroker.cpp : Notice(5):
+	Changed Phase: expiring next time timers for gm
+2017-Apr-17 13:37:19.732729 : CBroker.cpp : Notice(5):
+	Scheduling task for next time timer: 0
+2017-Apr-17 13:37:20.050860 : CBroker.cpp : Notice(5):
+	Aligned phase to 1 (was 2) for 0 ms
+2017-Apr-17 13:37:20.050948 : CBroker.cpp : Notice(5):
+	Phase: sc for 0ms offset 00:00:00
+2017-Apr-17 13:37:20.051051 : CBroker.cpp : Notice(5):
+	Phase: vvc for 4100ms offset 00:00:00
+2017-Apr-17 13:37:20.051083 : CBroker.cpp : Notice(5):
+	Changed Phase: expiring next time timers for sc
+2017-Apr-17 13:37:20.051121 : VoltVarCtrl.cpp : Notice(5):
+	Updated Peer List Received from: explosion.ece.ncsu.edu:5002
+loaded okay
+SSTs under Slave #1: SST1 SST2 SST3 
+
+2017-Apr-17 13:37:20.051252 : VoltVarCtrl.cpp : Notice(5):
+	Got VoltageDelta from: explosion.ece.ncsu.edu:5002
+2017-Apr-17 13:37:20.051298 : VoltVarCtrl.cpp : Notice(5):
+	CF 2 Phase 3
+2017-Apr-17 13:37:24.151255 : CBroker.cpp : Notice(5):
+	Aligned phase to 0 (was 0) for 529 ms
+2017-Apr-17 13:37:24.151365 : CBroker.cpp : Notice(5):
+	Phase: gm for 529ms offset 00:00:00
+2017-Apr-17 13:37:24.151427 : CBroker.cpp : Notice(5):
+	Changed Phase: expiring next time timers for vvc
+2017-Apr-17 13:37:24.151461 : CBroker.cpp : Notice(5):
+	Scheduling task for next time timer: 2
+2017-Apr-17 13:37:24.151520 : GroupManagement.cpp : Status(4):
+	Group Bitfield : 10100000000000000000000000000000
+2017-Apr-17 13:37:24.151564 : GroupManagement.cpp : Status(4):
+	Group Float : 7.00649e-45
+2017-Apr-17 13:37:24.151638 : GroupManagement.cpp : Status(4):
+	- SYSTEM STATE
+Me: explosion.ece.ncsu.edu:5002, Group: 1804289384 Leader:explosion.ece.ncsu.edu:5002
+SYSTEM NODES
+Node: explosion.ece.ncsu.edu:5001 State: Unknown
+Node: explosion.ece.ncsu.edu:5002 State: Up (Me, Coordinator)
+FID state: 0
+Current Skew: 00:00:00
+Time left in phase: 00:00:00.528620
+
+2017-Apr-17 13:37:24.153970 : CConnectionManager.cpp : Warn(3):
+	EP = 10.76.56.78:5001
+2017-Apr-17 13:37:24.294382 : CPhysicalTopology.cpp : Warn(3):
+	No topology configuration file specified
+2017-Apr-17 13:37:24.294451 : GroupManagement.cpp : Warn(3):
+	Physical Topology not available. Groups will form using cyber topology only.
+2017-Apr-17 13:37:24.683372 : CBroker.cpp : Notice(5):
+	Aligned phase to 1 (was 1) for 317 ms
+2017-Apr-17 13:37:24.683450 : CBroker.cpp : Notice(5):
+	Phase: sc for 317ms offset 00:00:00
+2017-Apr-17 13:37:24.683502 : CBroker.cpp : Notice(5):
+	Changed Phase: expiring next time timers for gm
+2017-Apr-17 13:37:24.683559 : CBroker.cpp : Notice(5):
+	Scheduling task for next time timer: 0
+2017-Apr-17 13:37:25.000656 : CBroker.cpp : Notice(5):
+	Aligned phase to 1 (was 2) for 0 ms
+2017-Apr-17 13:37:25.000778 : CBroker.cpp : Notice(5):
+	Phase: sc for 0ms offset 00:00:00
+2017-Apr-17 13:37:25.000888 : CBroker.cpp : Notice(5):
+	Phase: vvc for 4100ms offset 00:00:00
+2017-Apr-17 13:37:25.000941 : CBroker.cpp : Notice(5):
+	Changed Phase: expiring next time timers for sc
+loaded okay
+SSTs under Slave #1: SST1 SST2 SST3 
+
+2017-Apr-17 13:37:25.001120 : VoltVarCtrl.cpp : Notice(5):
+	Got VoltageDelta from: explosion.ece.ncsu.edu:5002
+2017-Apr-17 13:37:25.001180 : VoltVarCtrl.cpp : Notice(5):
+	CF 2 Phase 3
+2017-Apr-17 13:37:26.457223 : CClockSynchronizer.cpp : Notice(5):
+	Adjusting Skew to 00:00:00
+2017-Apr-17 13:37:27.891377 : CBroker.cpp : Fatal(0):
+	Caught signal 2. Shutting Down...
+2017-Apr-17 13:37:27.892711 : CMqttAdapter.cpp : Status(4):
+	MQTT message receivedleave/DGIClient/1:disconnect
+2017-Apr-17 13:37:27.892780 : CMqttAdapter.cpp : Status(4):
+	MQTT message receivedleave/DGIClient/1:disconnect
+2017-Apr-17 13:37:27.892846 : CMqttAdapter.cpp : Status(4):
+	Received a leave message for device: DGIClient
+2017-Apr-17 13:37:27.892883 : CDeviceManager.cpp : Warn(3):
+	Could not remove the device DGIClient from the  device manager: no such device exists.
+2017-Apr-17 13:37:28.092557 : CAdapterFactory.cpp : Status(4):
+	The adapter i/o service has stopped.

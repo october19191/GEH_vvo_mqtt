@@ -1,0 +1,1672 @@
+2017-Apr-17 02:12:14.748761 : CLogger.cpp : Info(6):
+	Logger config file ./config/logger.cfg successfully loaded.
+2017-Apr-17 02:12:14.748938 : PosixMain.cpp : Info(6):
+	Generated UUID: explosion.ece.ncsu.edu:5001
+2017-Apr-17 02:12:14.749102 : CTimings.cpp : Info(6):
+	timer config file config/timings-fast-5.cfg successfully loaded.
+2017-Apr-17 02:12:14.749146 : PosixMain.cpp : Status(4):
+	adatper config not set
+2017-Apr-17 02:12:14.749261 : CBroker.cpp : Notice(5):
+	Phase: gm for 160ms offset 00:00:00
+2017-Apr-17 02:12:14.749296 : CDispatcher.cpp : Debug(7):
+	Registered module listening on gm
+2017-Apr-17 02:12:14.749323 : CDispatcher.cpp : Debug(7):
+	Registered module listening on sc
+2017-Apr-17 02:12:14.749348 : CDispatcher.cpp : Debug(7):
+	Registered module listening on vvc
+2017-Apr-17 02:12:14.749373 : CDispatcher.cpp : Debug(7):
+	Registered module listening on vvc
+2017-Apr-17 02:12:14.749407 : PosixMain.cpp : Debug(7):
+	Starting thread of Modules
+2017-Apr-17 02:12:14.749436 : CBroker.cpp : Debug(7):
+	Module gm now has queue size: 1
+2017-Apr-17 02:12:14.749460 : CBroker.cpp : Debug(7):
+	Scheduled task (NODELAY) for gm
+2017-Apr-17 02:12:14.749486 : CBroker.cpp : Debug(7):
+	Module vvC now has queue size: 1
+2017-Apr-17 02:12:14.749510 : CBroker.cpp : Debug(7):
+	Scheduled task (NODELAY) for vvC
+2017-Apr-17 02:12:14.749630 : CListener.cpp : Debug(7):
+	Listening for next message
+2017-Apr-17 02:12:14.749679 : CDeviceBuilder.cpp : Debug(7):
+	read_xml with the path: config/device.xml
+2017-Apr-17 02:12:14.749812 : CDeviceBuilder.cpp : Debug(7):
+	Processing the next device class...
+2017-Apr-17 02:12:14.749841 : CDeviceBuilder.cpp : Debug(7):
+	id = Sst_a
+2017-Apr-17 02:12:14.749866 : CDeviceBuilder.cpp : Debug(7):
+	state = gateway
+2017-Apr-17 02:12:14.749890 : CDeviceBuilder.cpp : Debug(7):
+	command = gateway
+2017-Apr-17 02:12:14.749918 : CDeviceBuilder.cpp : Debug(7):
+	Processing the next device class...
+2017-Apr-17 02:12:14.749943 : CDeviceBuilder.cpp : Debug(7):
+	id = Sst_b
+2017-Apr-17 02:12:14.749967 : CDeviceBuilder.cpp : Debug(7):
+	state = gateway
+2017-Apr-17 02:12:14.749992 : CDeviceBuilder.cpp : Debug(7):
+	command = gateway
+2017-Apr-17 02:12:14.750019 : CDeviceBuilder.cpp : Debug(7):
+	Processing the next device class...
+2017-Apr-17 02:12:14.750044 : CDeviceBuilder.cpp : Debug(7):
+	id = Sst_c
+2017-Apr-17 02:12:14.750068 : CDeviceBuilder.cpp : Debug(7):
+	state = gateway
+2017-Apr-17 02:12:14.750093 : CDeviceBuilder.cpp : Debug(7):
+	command = gateway
+2017-Apr-17 02:12:14.750119 : CDeviceBuilder.cpp : Debug(7):
+	Processing the next device class...
+2017-Apr-17 02:12:14.750144 : CDeviceBuilder.cpp : Debug(7):
+	id = Pload_a
+2017-Apr-17 02:12:14.750168 : CDeviceBuilder.cpp : Debug(7):
+	state = pload
+2017-Apr-17 02:12:14.750193 : CDeviceBuilder.cpp : Debug(7):
+	Processing the next device class...
+2017-Apr-17 02:12:14.750218 : CDeviceBuilder.cpp : Debug(7):
+	id = Pload_b
+2017-Apr-17 02:12:14.750242 : CDeviceBuilder.cpp : Debug(7):
+	state = pload
+2017-Apr-17 02:12:14.750268 : CDeviceBuilder.cpp : Debug(7):
+	Processing the next device class...
+2017-Apr-17 02:12:14.750293 : CDeviceBuilder.cpp : Debug(7):
+	id = Pload_c
+2017-Apr-17 02:12:14.750317 : CDeviceBuilder.cpp : Debug(7):
+	state = pload
+2017-Apr-17 02:12:14.750343 : CDeviceBuilder.cpp : Debug(7):
+	Processing the next device class...
+2017-Apr-17 02:12:14.750368 : CDeviceBuilder.cpp : Debug(7):
+	id = Sst
+2017-Apr-17 02:12:14.750392 : CDeviceBuilder.cpp : Debug(7):
+	state = gateway
+2017-Apr-17 02:12:14.750419 : CDeviceBuilder.cpp : Debug(7):
+	command = gateway
+2017-Apr-17 02:12:14.750445 : CDeviceBuilder.cpp : Debug(7):
+	Processing the next device class...
+2017-Apr-17 02:12:14.750470 : CDeviceBuilder.cpp : Debug(7):
+	id = Desd
+2017-Apr-17 02:12:14.750494 : CDeviceBuilder.cpp : Debug(7):
+	state = storage
+2017-Apr-17 02:12:14.750519 : CDeviceBuilder.cpp : Debug(7):
+	command = storage
+2017-Apr-17 02:12:14.750543 : CDeviceBuilder.cpp : Debug(7):
+	Processing the next device class...
+2017-Apr-17 02:12:14.750568 : CDeviceBuilder.cpp : Debug(7):
+	id = Drer
+2017-Apr-17 02:12:14.750593 : CDeviceBuilder.cpp : Debug(7):
+	state = generation
+2017-Apr-17 02:12:14.750633 : CDeviceBuilder.cpp : Debug(7):
+	Processing the next device class...
+2017-Apr-17 02:12:14.750659 : CDeviceBuilder.cpp : Debug(7):
+	id = Load
+2017-Apr-17 02:12:14.750683 : CDeviceBuilder.cpp : Debug(7):
+	state = drain
+2017-Apr-17 02:12:14.750709 : CDeviceBuilder.cpp : Debug(7):
+	Processing the next device class...
+2017-Apr-17 02:12:14.750734 : CDeviceBuilder.cpp : Debug(7):
+	id = Fid
+2017-Apr-17 02:12:14.750761 : CDeviceBuilder.cpp : Debug(7):
+	state = state
+2017-Apr-17 02:12:14.750786 : CDeviceBuilder.cpp : Debug(7):
+	Processing the next device class...
+2017-Apr-17 02:12:14.750811 : CDeviceBuilder.cpp : Debug(7):
+	id = Logger
+2017-Apr-17 02:12:14.750836 : CDeviceBuilder.cpp : Debug(7):
+	state = dgiEnable
+2017-Apr-17 02:12:14.750861 : CDeviceBuilder.cpp : Debug(7):
+	command = groupStatus
+2017-Apr-17 02:12:14.750886 : CDeviceBuilder.cpp : Debug(7):
+	Processing the next device class...
+2017-Apr-17 02:12:14.750911 : CDeviceBuilder.cpp : Debug(7):
+	id = Omega
+2017-Apr-17 02:12:14.750935 : CDeviceBuilder.cpp : Debug(7):
+	state = frequency
+2017-Apr-17 02:12:14.750963 : CDeviceBuilder.cpp : Debug(7):
+	ExpandInfo on target: Desd
+2017-Apr-17 02:12:14.750990 : CDeviceBuilder.cpp : Debug(7):
+	ExpandInfo on target: Drer
+2017-Apr-17 02:12:14.751015 : CDeviceBuilder.cpp : Debug(7):
+	ExpandInfo on target: Fid
+2017-Apr-17 02:12:14.751040 : CDeviceBuilder.cpp : Debug(7):
+	ExpandInfo on target: Load
+2017-Apr-17 02:12:14.751065 : CDeviceBuilder.cpp : Debug(7):
+	ExpandInfo on target: Logger
+2017-Apr-17 02:12:14.751090 : CDeviceBuilder.cpp : Debug(7):
+	ExpandInfo on target: Omega
+2017-Apr-17 02:12:14.751115 : CDeviceBuilder.cpp : Debug(7):
+	ExpandInfo on target: Pload_a
+2017-Apr-17 02:12:14.751139 : CDeviceBuilder.cpp : Debug(7):
+	ExpandInfo on target: Pload_b
+2017-Apr-17 02:12:14.751164 : CDeviceBuilder.cpp : Debug(7):
+	ExpandInfo on target: Pload_c
+2017-Apr-17 02:12:14.751189 : CDeviceBuilder.cpp : Debug(7):
+	ExpandInfo on target: Sst
+2017-Apr-17 02:12:14.751213 : CDeviceBuilder.cpp : Debug(7):
+	ExpandInfo on target: Sst_a
+2017-Apr-17 02:12:14.751238 : CDeviceBuilder.cpp : Debug(7):
+	ExpandInfo on target: Sst_b
+2017-Apr-17 02:12:14.751262 : CDeviceBuilder.cpp : Debug(7):
+	ExpandInfo on target: Sst_c
+2017-Apr-17 02:12:14.751301 : CAdapterFactory.cpp : Status(4):
+	Plug and play devices disabled.
+2017-Apr-17 02:12:14.751325 : CAdapterFactory.cpp : Status(4):
+	MQTT client entered
+2017-Apr-17 02:12:14.912869 : CMqttAdapter.cpp : Notice(5):
+	Subscribed to MQTT topic SST/1/JSON
+2017-Apr-17 02:12:14.923093 : CMqttAdapter.cpp : Notice(5):
+	Subscribed to MQTT topic SST/1/AOUT/#
+2017-Apr-17 02:12:14.933321 : CMqttAdapter.cpp : Notice(5):
+	Subscribed to MQTT topic SST/1/DOUT/#
+2017-Apr-17 02:12:14.943547 : CMqttAdapter.cpp : Notice(5):
+	Subscribed to MQTT topic SST/1/ACK
+2017-Apr-17 02:12:14.953785 : CMqttAdapter.cpp : Notice(5):
+	Subscribed to MQTT topic DESD/1/JSON
+2017-Apr-17 02:12:14.964011 : CMqttAdapter.cpp : Notice(5):
+	Subscribed to MQTT topic DESD/1/AOUT/#
+2017-Apr-17 02:12:14.974239 : CMqttAdapter.cpp : Notice(5):
+	Subscribed to MQTT topic DESD/1/DOUT/#
+2017-Apr-17 02:12:14.984464 : CMqttAdapter.cpp : Notice(5):
+	Subscribed to MQTT topic DESD/1/ACK
+2017-Apr-17 02:12:14.984576 : CMqttMessage.cpp : Info(6):
+	join/DGIClient/1 Connect sent for delivery with token 11
+2017-Apr-17 02:12:14.984638 : CAdapterFactory.cpp : Status(4):
+	MQTT client enabled 4.
+2017-Apr-17 02:12:14.984673 : CAdapterFactory.cpp : Status(4):
+	System will start without adapters.
+2017-Apr-17 02:12:14.984724 : CDispatcher.cpp : Debug(7):
+	Registered module listening on clk
+2017-Apr-17 02:12:14.984759 : CMqttAdapter.cpp : Info(6):
+	MQTT client DGIClient has delivered message 11
+2017-Apr-17 02:12:14.984809 : CAdapterFactory.cpp : Status(4):
+	Starting the adapter i/o service.
+2017-Apr-17 02:12:14.984862 : CBroker.cpp : Notice(5):
+	Aligned phase to 0 (was 1) for 56 ms
+2017-Apr-17 02:12:14.984898 : CBroker.cpp : Notice(5):
+	Phase: gm for 56ms offset 00:00:00
+2017-Apr-17 02:12:14.984925 : CBroker.cpp : Debug(7):
+	Performing Job
+2017-Apr-17 02:12:14.984960 : GroupManagement.cpp : Notice(5):
+	Registering peer explosion.ece.ncsu.edu:5001
+2017-Apr-17 02:12:14.984988 : GroupManagement.cpp : Notice(5):
+	Registering peer explosion.ece.ncsu.edu:5002
+2017-Apr-17 02:12:14.985016 : GroupManagement.cpp : Notice(5):
+	All peers added 2
+2017-Apr-17 02:12:14.985043 : GroupManagement.cpp : Notice(5):
+	! explosion.ece.ncsu.edu:5001 added to peer set
+2017-Apr-17 02:12:14.985069 : GroupManagement.cpp : Notice(5):
+	! explosion.ece.ncsu.edu:5002 added to peer set
+2017-Apr-17 02:12:14.985097 : GroupManagement.cpp : Notice(5):
+	+ State Change ELECTION : 441
+2017-Apr-17 02:12:14.985124 : GroupManagement.cpp : Notice(5):
+	Changed group: 1804289384 (explosion.ece.ncsu.edu:5001)
+2017-Apr-17 02:12:14.985152 : GroupManagement.cpp : Notice(5):
+	+ State Change REORGANIZATION : 454
+2017-Apr-17 02:12:14.985178 : GroupManagement.cpp : Notice(5):
+	+ State Change NORMAL : 457
+2017-Apr-17 02:12:14.985222 : CConnectionManager.cpp : Info(6):
+	Making Fresh Connection to explosion.ece.ncsu.edu:5001
+2017-Apr-17 02:12:14.985249 : CConnectionManager.cpp : Debug(7):
+	Computing remote endpoint
+2017-Apr-17 02:12:14.985323 : CConnectionManager.cpp : Info(6):
+	Resolved: 127.0.0.1:5001
+2017-Apr-17 02:12:14.985356 : CConnectionManager.cpp : Warn(3):
+	EP = 127.0.0.1:5001
+2017-Apr-17 02:12:14.985382 : CConnectionManager.cpp : Debug(7):
+	Constructing CConnection
+2017-Apr-17 02:12:14.985421 : CDispatcher.cpp : Debug(7):
+	Processing message addressed to: all
+2017-Apr-17 02:12:14.985451 : CBroker.cpp : Debug(7):
+	Module gm now has queue size: 1
+2017-Apr-17 02:12:14.985477 : CBroker.cpp : Debug(7):
+	Scheduled task (NODELAY) for gm
+2017-Apr-17 02:12:14.986079 : CBroker.cpp : Debug(7):
+	Module sc now has queue size: 1
+2017-Apr-17 02:12:14.986112 : CBroker.cpp : Debug(7):
+	Scheduled task (NODELAY) for sc
+2017-Apr-17 02:12:14.986141 : CBroker.cpp : Debug(7):
+	Module vvc now has queue size: 1
+2017-Apr-17 02:12:14.986167 : CBroker.cpp : Debug(7):
+	Scheduled task (NODELAY) for vvc
+2017-Apr-17 02:12:14.986195 : CBroker.cpp : Debug(7):
+	Module vvc now has queue size: 2
+2017-Apr-17 02:12:14.986221 : CBroker.cpp : Debug(7):
+	Scheduled task (NODELAY) for vvc
+2017-Apr-17 02:12:14.986248 : GroupManagement.cpp : Info(6):
+	TIMER: Setting CheckTimer (Check): 460
+2017-Apr-17 02:12:14.986278 : CBroker.cpp : Debug(7):
+	Scheduled task for timer 0
+2017-Apr-17 02:12:14.986310 : CBroker.cpp : Debug(7):
+	Performing Job
+2017-Apr-17 02:12:14.986346 : GroupManagement.cpp : Notice(5):
+	Updated peer set (UPDATE)
+2017-Apr-17 02:12:15.024759 : CMqttAdapter.cpp : Status(4):
+	MQTT message receivedjoin/DGIClient/1:Connect
+2017-Apr-17 02:12:15.024818 : CMqttAdapter.cpp : Status(4):
+	MQTT message receivedjoin/DGIClient/1:Connect
+2017-Apr-17 02:12:15.024876 : CMqttAdapter.cpp : Status(4):
+	Received a join message for device: DGIClient
+2017-Apr-17 02:12:15.024928 : CMqttMessage.cpp : Info(6):
+	DGIClient/1/ACK ACK”x sent for delivery with token 12
+2017-Apr-17 02:12:15.042404 : CBroker.cpp : Notice(5):
+	Phase: sc for 80ms offset 00:00:00
+2017-Apr-17 02:12:15.042454 : CBroker.cpp : Notice(5):
+	Changed Phase: expiring next time timers for gm
+2017-Apr-17 02:12:15.042501 : CBroker.cpp : Debug(7):
+	Examine timer 0 for module gm expire nexttime: 1
+2017-Apr-17 02:12:15.042544 : CBroker.cpp : Notice(5):
+	Scheduling task for next time timer: 0
+2017-Apr-17 02:12:15.042586 : CBroker.cpp : Debug(7):
+	Examine timer 1 for module gm expire nexttime: 0
+2017-Apr-17 02:12:15.042622 : CBroker.cpp : Debug(7):
+	Examine timer 2 for module vvc expire nexttime: 0
+2017-Apr-17 02:12:15.042649 : CBroker.cpp : Debug(7):
+	Examine timer 3 for module vvc expire nexttime: 0
+2017-Apr-17 02:12:15.042676 : CBroker.cpp : Debug(7):
+	Performing Job
+2017-Apr-17 02:12:15.042708 : StateCollection.cpp : Info(6):
+	Peer List received from Group Leader: explosion.ece.ncsu.edu:5001
+2017-Apr-17 02:12:15.042745 : CBroker.cpp : Debug(7):
+	Handle finished: 0 For module gm
+2017-Apr-17 02:12:15.042773 : CBroker.cpp : Debug(7):
+	Module gm now has queue size: 1
+2017-Apr-17 02:12:15.064770 : CMqttAdapter.cpp : Info(6):
+	MQTT client DGIClient has delivered message 12
+2017-Apr-17 02:12:15.122835 : CBroker.cpp : Notice(5):
+	Phase: vvc for 1000ms offset 00:00:00
+2017-Apr-17 02:12:15.122885 : CBroker.cpp : Notice(5):
+	Changed Phase: expiring next time timers for sc
+2017-Apr-17 02:12:15.122929 : CBroker.cpp : Debug(7):
+	Examine timer 0 for module gm expire nexttime: 0
+2017-Apr-17 02:12:15.122974 : CBroker.cpp : Debug(7):
+	Examine timer 1 for module gm expire nexttime: 0
+2017-Apr-17 02:12:15.123017 : CBroker.cpp : Debug(7):
+	Examine timer 2 for module vvc expire nexttime: 0
+2017-Apr-17 02:12:15.123044 : CBroker.cpp : Debug(7):
+	Examine timer 3 for module vvc expire nexttime: 0
+2017-Apr-17 02:12:15.123071 : CBroker.cpp : Debug(7):
+	Performing Job
+2017-Apr-17 02:12:15.123100 : StateCollection.cpp : Info(6):
+	Peer List received from Group Leader: explosion.ece.ncsu.edu:5001
+2017-Apr-17 02:12:15.123133 : CBroker.cpp : Debug(7):
+	Performing Job
+2017-Apr-17 02:12:15.123164 : VoltVarCtrl.cpp : Notice(5):
+	Updated Peer List Received from: explosion.ece.ncsu.edu:5001
+2017-Apr-17 02:12:16.123161 : CBroker.cpp : Notice(5):
+	Aligned phase to 0 (was 0) for 157 ms
+2017-Apr-17 02:12:16.123224 : CBroker.cpp : Notice(5):
+	Phase: gm for 157ms offset 00:00:00
+2017-Apr-17 02:12:16.123268 : CBroker.cpp : Notice(5):
+	Changed Phase: expiring next time timers for vvc
+2017-Apr-17 02:12:16.123312 : CBroker.cpp : Debug(7):
+	Examine timer 0 for module gm expire nexttime: 0
+2017-Apr-17 02:12:16.123356 : CBroker.cpp : Debug(7):
+	Examine timer 1 for module gm expire nexttime: 0
+2017-Apr-17 02:12:16.123382 : CBroker.cpp : Debug(7):
+	Examine timer 2 for module vvc expire nexttime: 0
+2017-Apr-17 02:12:16.123409 : CBroker.cpp : Debug(7):
+	Examine timer 3 for module vvc expire nexttime: 0
+2017-Apr-17 02:12:16.123435 : CBroker.cpp : Debug(7):
+	Performing Job
+2017-Apr-17 02:12:16.123472 : GroupManagement.cpp : Status(4):
+	Group Bitfield : 11000000000000000000000000000000
+2017-Apr-17 02:12:16.123513 : GroupManagement.cpp : Status(4):
+	Group Float : 4.2039e-45
+2017-Apr-17 02:12:16.123573 : GroupManagement.cpp : Status(4):
+	- SYSTEM STATE
+Me: explosion.ece.ncsu.edu:5001, Group: 1804289384 Leader:explosion.ece.ncsu.edu:5001
+SYSTEM NODES
+Node: explosion.ece.ncsu.edu:5001 State: Up (Me, Coordinator)
+Node: explosion.ece.ncsu.edu:5002 State: Unknown
+FID state: 0
+Current Skew: 00:00:00
+Time left in phase: 00:00:00.156593
+
+2017-Apr-17 02:12:16.123615 : GroupManagement.cpp : Debug(7):
+	Generated AYC : 0
+2017-Apr-17 02:12:16.123644 : GroupManagement.cpp : Info(6):
+	SEND: Sending out AYC
+2017-Apr-17 02:12:16.123672 : CConnectionManager.cpp : Info(6):
+	Making Fresh Connection to explosion.ece.ncsu.edu:5002
+2017-Apr-17 02:12:16.123699 : CConnectionManager.cpp : Debug(7):
+	Computing remote endpoint
+2017-Apr-17 02:12:16.125824 : CConnectionManager.cpp : Info(6):
+	Resolved: 10.76.56.78:5002
+2017-Apr-17 02:12:16.125861 : CConnectionManager.cpp : Warn(3):
+	EP = 10.76.56.78:5002
+2017-Apr-17 02:12:16.125888 : CConnectionManager.cpp : Debug(7):
+	Constructing CConnection
+2017-Apr-17 02:12:16.125957 : CProtocolSR.cpp : Debug(7):
+	Set Expire time: 2017-Apr-17 06:12:17.125951
+2017-Apr-17 02:12:16.126057 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:16.126120 : GroupManagement.cpp : Info(6):
+	TIMER: Setting GlobalTimer (Premerge): 537
+2017-Apr-17 02:12:16.126151 : CBroker.cpp : Debug(7):
+	Scheduled task for timer 0
+2017-Apr-17 02:12:16.146171 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:16.166185 : CBroker.cpp : Debug(7):
+	Handle finished: 0 For module gm
+2017-Apr-17 02:12:16.166240 : CBroker.cpp : Debug(7):
+	Module gm now has queue size: 1
+2017-Apr-17 02:12:16.166290 : CBroker.cpp : Debug(7):
+	Performing Job
+2017-Apr-17 02:12:16.166343 : CPhysicalTopology.cpp : Warn(3):
+	No topology configuration file specified
+2017-Apr-17 02:12:16.166385 : GroupManagement.cpp : Warn(3):
+	Physical Topology not available. Groups will form using cyber topology only.
+2017-Apr-17 02:12:16.166412 : GroupManagement.cpp : Info(6):
+	TIMER: Setting CheckTimer (Check): 683
+2017-Apr-17 02:12:16.166446 : CBroker.cpp : Debug(7):
+	Scheduled task for timer 0
+2017-Apr-17 02:12:16.166496 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:16.186647 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:16.206831 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:16.227014 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:16.247146 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:16.267328 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:16.283276 : CBroker.cpp : Notice(5):
+	Phase: sc for 80ms offset 00:00:00
+2017-Apr-17 02:12:16.283327 : CBroker.cpp : Notice(5):
+	Changed Phase: expiring next time timers for gm
+2017-Apr-17 02:12:16.283373 : CBroker.cpp : Debug(7):
+	Examine timer 0 for module gm expire nexttime: 1
+2017-Apr-17 02:12:16.283417 : CBroker.cpp : Notice(5):
+	Scheduling task for next time timer: 0
+2017-Apr-17 02:12:16.283460 : CBroker.cpp : Debug(7):
+	Examine timer 1 for module gm expire nexttime: 0
+2017-Apr-17 02:12:16.283487 : CBroker.cpp : Debug(7):
+	Examine timer 2 for module vvc expire nexttime: 0
+2017-Apr-17 02:12:16.283514 : CBroker.cpp : Debug(7):
+	Examine timer 3 for module vvc expire nexttime: 0
+2017-Apr-17 02:12:16.283544 : CBroker.cpp : Debug(7):
+	Handle finished: 0 For module gm
+2017-Apr-17 02:12:16.283571 : CBroker.cpp : Debug(7):
+	Module gm now has queue size: 1
+2017-Apr-17 02:12:16.287511 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:16.307694 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:16.327875 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:16.348056 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:16.363641 : CBroker.cpp : Notice(5):
+	Phase: vvc for 1000ms offset 00:00:00
+2017-Apr-17 02:12:16.363692 : CBroker.cpp : Notice(5):
+	Changed Phase: expiring next time timers for sc
+2017-Apr-17 02:12:16.363737 : CBroker.cpp : Debug(7):
+	Examine timer 0 for module gm expire nexttime: 0
+2017-Apr-17 02:12:16.363782 : CBroker.cpp : Debug(7):
+	Examine timer 1 for module gm expire nexttime: 0
+2017-Apr-17 02:12:16.363824 : CBroker.cpp : Debug(7):
+	Examine timer 2 for module vvc expire nexttime: 0
+2017-Apr-17 02:12:16.363851 : CBroker.cpp : Debug(7):
+	Examine timer 3 for module vvc expire nexttime: 0
+2017-Apr-17 02:12:16.368188 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:16.388370 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:16.408553 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:16.428749 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:16.448934 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:16.469117 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:16.489300 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:16.509483 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:16.529666 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:16.549849 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:16.570032 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:16.590164 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:16.610347 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:16.630530 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:16.650727 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:16.670909 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:16.691092 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:16.711223 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:16.731405 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:16.751603 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:16.771728 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:16.791910 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:16.812093 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:16.832224 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:16.852406 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:16.872589 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:16.892780 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:16.912962 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:16.933145 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:16.953328 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:16.973510 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:16.993693 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:17.013877 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:17.034059 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:17.054189 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:17.074372 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:17.094556 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:17.114752 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:17.134874 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:17.155029 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:17.175169 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:17.195353 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:17.215536 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:17.235728 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:17.255912 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:17.276094 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:17.296225 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:17.316408 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:17.336592 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:17.356786 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:17.363908 : CBroker.cpp : Notice(5):
+	Aligned phase to 0 (was 0) for 157 ms
+2017-Apr-17 02:12:17.363972 : CBroker.cpp : Notice(5):
+	Phase: gm for 157ms offset 00:00:00
+2017-Apr-17 02:12:17.364016 : CBroker.cpp : Notice(5):
+	Changed Phase: expiring next time timers for vvc
+2017-Apr-17 02:12:17.364061 : CBroker.cpp : Debug(7):
+	Examine timer 0 for module gm expire nexttime: 0
+2017-Apr-17 02:12:17.364105 : CBroker.cpp : Debug(7):
+	Examine timer 1 for module gm expire nexttime: 0
+2017-Apr-17 02:12:17.364149 : CBroker.cpp : Debug(7):
+	Examine timer 2 for module vvc expire nexttime: 0
+2017-Apr-17 02:12:17.364194 : CBroker.cpp : Debug(7):
+	Examine timer 3 for module vvc expire nexttime: 0
+2017-Apr-17 02:12:17.364238 : CBroker.cpp : Debug(7):
+	Performing Job
+2017-Apr-17 02:12:17.364290 : GroupManagement.cpp : Status(4):
+	Group Bitfield : 11000000000000000000000000000000
+2017-Apr-17 02:12:17.364325 : GroupManagement.cpp : Status(4):
+	Group Float : 4.2039e-45
+2017-Apr-17 02:12:17.364379 : GroupManagement.cpp : Status(4):
+	- SYSTEM STATE
+Me: explosion.ece.ncsu.edu:5001, Group: 1804289384 Leader:explosion.ece.ncsu.edu:5001
+SYSTEM NODES
+Node: explosion.ece.ncsu.edu:5001 State: Up (Me, Coordinator)
+Node: explosion.ece.ncsu.edu:5002 State: Unknown
+FID state: 0
+Current Skew: 00:00:00
+Time left in phase: 00:00:00.156535
+
+2017-Apr-17 02:12:17.364409 : GroupManagement.cpp : Debug(7):
+	Generated AYC : 1
+2017-Apr-17 02:12:17.364441 : GroupManagement.cpp : Info(6):
+	SEND: Sending out AYC
+2017-Apr-17 02:12:17.364485 : CProtocolSR.cpp : Debug(7):
+	Set Expire time: 2017-Apr-17 06:12:18.364479
+2017-Apr-17 02:12:17.364532 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:17.364582 : GroupManagement.cpp : Info(6):
+	TIMER: Setting GlobalTimer (Premerge): 537
+2017-Apr-17 02:12:17.364625 : CBroker.cpp : Debug(7):
+	Scheduled task for timer 0
+2017-Apr-17 02:12:17.384693 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:17.404710 : CBroker.cpp : Debug(7):
+	Handle finished: 0 For module gm
+2017-Apr-17 02:12:17.404765 : CBroker.cpp : Debug(7):
+	Module gm now has queue size: 1
+2017-Apr-17 02:12:17.404815 : CBroker.cpp : Debug(7):
+	Performing Job
+2017-Apr-17 02:12:17.404861 : GroupManagement.cpp : Warn(3):
+	Physical Topology not available. Groups will form using cyber topology only.
+2017-Apr-17 02:12:17.404904 : GroupManagement.cpp : Info(6):
+	TIMER: Setting CheckTimer (Check): 683
+2017-Apr-17 02:12:17.404933 : CBroker.cpp : Debug(7):
+	Scheduled task for timer 0
+2017-Apr-17 02:12:17.404986 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:17.425145 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:17.445336 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:17.465525 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:17.485729 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:17.505919 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:17.521691 : CBroker.cpp : Notice(5):
+	Phase: sc for 80ms offset 00:00:00
+2017-Apr-17 02:12:17.521740 : CBroker.cpp : Notice(5):
+	Changed Phase: expiring next time timers for gm
+2017-Apr-17 02:12:17.521785 : CBroker.cpp : Debug(7):
+	Examine timer 0 for module gm expire nexttime: 1
+2017-Apr-17 02:12:17.521828 : CBroker.cpp : Notice(5):
+	Scheduling task for next time timer: 0
+2017-Apr-17 02:12:17.521871 : CBroker.cpp : Debug(7):
+	Examine timer 1 for module gm expire nexttime: 0
+2017-Apr-17 02:12:17.521898 : CBroker.cpp : Debug(7):
+	Examine timer 2 for module vvc expire nexttime: 0
+2017-Apr-17 02:12:17.521924 : CBroker.cpp : Debug(7):
+	Examine timer 3 for module vvc expire nexttime: 0
+2017-Apr-17 02:12:17.521953 : CBroker.cpp : Debug(7):
+	Handle finished: 0 For module gm
+2017-Apr-17 02:12:17.521980 : CBroker.cpp : Debug(7):
+	Module gm now has queue size: 1
+2017-Apr-17 02:12:17.526109 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:17.546247 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:17.566436 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:17.586634 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:17.602045 : CBroker.cpp : Notice(5):
+	Phase: vvc for 1000ms offset 00:00:00
+2017-Apr-17 02:12:17.602094 : CBroker.cpp : Notice(5):
+	Changed Phase: expiring next time timers for sc
+2017-Apr-17 02:12:17.602138 : CBroker.cpp : Debug(7):
+	Examine timer 0 for module gm expire nexttime: 0
+2017-Apr-17 02:12:17.602182 : CBroker.cpp : Debug(7):
+	Examine timer 1 for module gm expire nexttime: 0
+2017-Apr-17 02:12:17.602226 : CBroker.cpp : Debug(7):
+	Examine timer 2 for module vvc expire nexttime: 0
+2017-Apr-17 02:12:17.602252 : CBroker.cpp : Debug(7):
+	Examine timer 3 for module vvc expire nexttime: 0
+2017-Apr-17 02:12:17.606824 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:17.627014 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:17.647187 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:17.667376 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:17.687566 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:17.707767 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:17.727956 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:17.748146 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:17.768341 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:17.788530 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:17.808731 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:17.828919 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:17.849107 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:17.869245 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:17.889434 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:17.909631 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:17.929820 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:17.950009 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:17.970194 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:17.990383 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:18.010576 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:18.030778 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:18.050965 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:18.071154 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:18.091345 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:18.111534 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:18.131732 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:18.151921 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:18.172112 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:18.192249 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:18.212438 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:18.232637 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:18.252764 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:18.272952 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:18.293139 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:18.313277 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:18.333469 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:18.353658 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:18.373847 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:18.394036 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:18.414204 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:18.434393 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:18.454582 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:18.474780 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:18.494970 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:18.515159 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:18.535349 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:18.555539 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:18.575708 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:18.595898 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:18.602363 : CBroker.cpp : Notice(5):
+	Aligned phase to 0 (was 0) for 158 ms
+2017-Apr-17 02:12:18.602424 : CBroker.cpp : Notice(5):
+	Phase: gm for 158ms offset 00:00:00
+2017-Apr-17 02:12:18.602467 : CBroker.cpp : Notice(5):
+	Changed Phase: expiring next time timers for vvc
+2017-Apr-17 02:12:18.602510 : CBroker.cpp : Debug(7):
+	Examine timer 0 for module gm expire nexttime: 0
+2017-Apr-17 02:12:18.602555 : CBroker.cpp : Debug(7):
+	Examine timer 1 for module gm expire nexttime: 0
+2017-Apr-17 02:12:18.602587 : CBroker.cpp : Debug(7):
+	Examine timer 2 for module vvc expire nexttime: 0
+2017-Apr-17 02:12:18.602622 : CBroker.cpp : Debug(7):
+	Examine timer 3 for module vvc expire nexttime: 0
+2017-Apr-17 02:12:18.602648 : CBroker.cpp : Debug(7):
+	Performing Job
+2017-Apr-17 02:12:18.602679 : GroupManagement.cpp : Status(4):
+	Group Bitfield : 11000000000000000000000000000000
+2017-Apr-17 02:12:18.602710 : GroupManagement.cpp : Status(4):
+	Group Float : 4.2039e-45
+2017-Apr-17 02:12:18.602761 : GroupManagement.cpp : Status(4):
+	- SYSTEM STATE
+Me: explosion.ece.ncsu.edu:5001, Group: 1804289384 Leader:explosion.ece.ncsu.edu:5001
+SYSTEM NODES
+Node: explosion.ece.ncsu.edu:5001 State: Up (Me, Coordinator)
+Node: explosion.ece.ncsu.edu:5002 State: Unknown
+FID state: 0
+Current Skew: 00:00:00
+Time left in phase: 00:00:00.157608
+
+2017-Apr-17 02:12:18.602791 : GroupManagement.cpp : Debug(7):
+	Generated AYC : 2
+2017-Apr-17 02:12:18.602819 : GroupManagement.cpp : Info(6):
+	SEND: Sending out AYC
+2017-Apr-17 02:12:18.602861 : CProtocolSR.cpp : Debug(7):
+	Set Expire time: 2017-Apr-17 06:12:19.602855
+2017-Apr-17 02:12:18.602913 : IProtocol.cpp : Debug(7):
+	Writing 261 bytes to channel
+2017-Apr-17 02:12:18.602963 : GroupManagement.cpp : Info(6):
+	TIMER: Setting GlobalTimer (Premerge): 537
+2017-Apr-17 02:12:18.602993 : CBroker.cpp : Debug(7):
+	Scheduled task for timer 0
+2017-Apr-17 02:12:18.623080 : IProtocol.cpp : Debug(7):
+	Writing 261 bytes to channel
+2017-Apr-17 02:12:18.643076 : CBroker.cpp : Debug(7):
+	Handle finished: 0 For module gm
+2017-Apr-17 02:12:18.643130 : CBroker.cpp : Debug(7):
+	Module gm now has queue size: 1
+2017-Apr-17 02:12:18.643180 : CBroker.cpp : Debug(7):
+	Performing Job
+2017-Apr-17 02:12:18.643227 : GroupManagement.cpp : Warn(3):
+	Physical Topology not available. Groups will form using cyber topology only.
+2017-Apr-17 02:12:18.643270 : GroupManagement.cpp : Info(6):
+	TIMER: Setting CheckTimer (Check): 683
+2017-Apr-17 02:12:18.643299 : CBroker.cpp : Debug(7):
+	Scheduled task for timer 0
+2017-Apr-17 02:12:18.643357 : IProtocol.cpp : Debug(7):
+	Writing 261 bytes to channel
+2017-Apr-17 02:12:18.663524 : IProtocol.cpp : Debug(7):
+	Writing 261 bytes to channel
+2017-Apr-17 02:12:18.683739 : IProtocol.cpp : Debug(7):
+	Writing 261 bytes to channel
+2017-Apr-17 02:12:18.703939 : IProtocol.cpp : Debug(7):
+	Writing 261 bytes to channel
+2017-Apr-17 02:12:18.724139 : IProtocol.cpp : Debug(7):
+	Writing 261 bytes to channel
+2017-Apr-17 02:12:18.744288 : IProtocol.cpp : Debug(7):
+	Writing 261 bytes to channel
+2017-Apr-17 02:12:18.761117 : CBroker.cpp : Notice(5):
+	Phase: sc for 80ms offset 00:00:00
+2017-Apr-17 02:12:18.761168 : CBroker.cpp : Notice(5):
+	Changed Phase: expiring next time timers for gm
+2017-Apr-17 02:12:18.761213 : CBroker.cpp : Debug(7):
+	Examine timer 0 for module gm expire nexttime: 1
+2017-Apr-17 02:12:18.761257 : CBroker.cpp : Notice(5):
+	Scheduling task for next time timer: 0
+2017-Apr-17 02:12:18.761300 : CBroker.cpp : Debug(7):
+	Examine timer 1 for module gm expire nexttime: 0
+2017-Apr-17 02:12:18.761327 : CBroker.cpp : Debug(7):
+	Examine timer 2 for module vvc expire nexttime: 0
+2017-Apr-17 02:12:18.761353 : CBroker.cpp : Debug(7):
+	Examine timer 3 for module vvc expire nexttime: 0
+2017-Apr-17 02:12:18.761383 : CBroker.cpp : Debug(7):
+	Handle finished: 0 For module gm
+2017-Apr-17 02:12:18.761410 : CBroker.cpp : Debug(7):
+	Module gm now has queue size: 1
+2017-Apr-17 02:12:18.764490 : IProtocol.cpp : Debug(7):
+	Writing 261 bytes to channel
+2017-Apr-17 02:12:18.784689 : IProtocol.cpp : Debug(7):
+	Writing 261 bytes to channel
+2017-Apr-17 02:12:18.804887 : IProtocol.cpp : Debug(7):
+	Writing 261 bytes to channel
+2017-Apr-17 02:12:18.825085 : IProtocol.cpp : Debug(7):
+	Writing 261 bytes to channel
+2017-Apr-17 02:12:18.841476 : CBroker.cpp : Notice(5):
+	Phase: vvc for 1000ms offset 00:00:00
+2017-Apr-17 02:12:18.841525 : CBroker.cpp : Notice(5):
+	Changed Phase: expiring next time timers for sc
+2017-Apr-17 02:12:18.841569 : CBroker.cpp : Debug(7):
+	Examine timer 0 for module gm expire nexttime: 0
+2017-Apr-17 02:12:18.841629 : CBroker.cpp : Debug(7):
+	Examine timer 1 for module gm expire nexttime: 0
+2017-Apr-17 02:12:18.841667 : CBroker.cpp : Debug(7):
+	Examine timer 2 for module vvc expire nexttime: 0
+2017-Apr-17 02:12:18.841694 : CBroker.cpp : Debug(7):
+	Examine timer 3 for module vvc expire nexttime: 0
+2017-Apr-17 02:12:18.845232 : IProtocol.cpp : Debug(7):
+	Writing 261 bytes to channel
+2017-Apr-17 02:12:18.865430 : IProtocol.cpp : Debug(7):
+	Writing 261 bytes to channel
+2017-Apr-17 02:12:18.885638 : IProtocol.cpp : Debug(7):
+	Writing 261 bytes to channel
+2017-Apr-17 02:12:18.905836 : IProtocol.cpp : Debug(7):
+	Writing 261 bytes to channel
+2017-Apr-17 02:12:18.925982 : IProtocol.cpp : Debug(7):
+	Writing 261 bytes to channel
+2017-Apr-17 02:12:18.946179 : IProtocol.cpp : Debug(7):
+	Writing 261 bytes to channel
+2017-Apr-17 02:12:18.966376 : IProtocol.cpp : Debug(7):
+	Writing 261 bytes to channel
+2017-Apr-17 02:12:18.986573 : IProtocol.cpp : Debug(7):
+	Writing 261 bytes to channel
+2017-Apr-17 02:12:19.006781 : IProtocol.cpp : Debug(7):
+	Writing 261 bytes to channel
+2017-Apr-17 02:12:19.026978 : IProtocol.cpp : Debug(7):
+	Writing 261 bytes to channel
+2017-Apr-17 02:12:19.047176 : IProtocol.cpp : Debug(7):
+	Writing 261 bytes to channel
+2017-Apr-17 02:12:19.067372 : IProtocol.cpp : Debug(7):
+	Writing 261 bytes to channel
+2017-Apr-17 02:12:19.087570 : IProtocol.cpp : Debug(7):
+	Writing 261 bytes to channel
+2017-Apr-17 02:12:19.107780 : IProtocol.cpp : Debug(7):
+	Writing 261 bytes to channel
+2017-Apr-17 02:12:19.127977 : IProtocol.cpp : Debug(7):
+	Writing 261 bytes to channel
+2017-Apr-17 02:12:19.148174 : IProtocol.cpp : Debug(7):
+	Writing 261 bytes to channel
+2017-Apr-17 02:12:19.168372 : IProtocol.cpp : Debug(7):
+	Writing 261 bytes to channel
+2017-Apr-17 02:12:19.188572 : IProtocol.cpp : Debug(7):
+	Writing 261 bytes to channel
+2017-Apr-17 02:12:19.208780 : IProtocol.cpp : Debug(7):
+	Writing 261 bytes to channel
+2017-Apr-17 02:12:19.228977 : IProtocol.cpp : Debug(7):
+	Writing 261 bytes to channel
+2017-Apr-17 02:12:19.249174 : IProtocol.cpp : Debug(7):
+	Writing 261 bytes to channel
+2017-Apr-17 02:12:19.269336 : IProtocol.cpp : Debug(7):
+	Writing 261 bytes to channel
+2017-Apr-17 02:12:19.289534 : IProtocol.cpp : Debug(7):
+	Writing 261 bytes to channel
+2017-Apr-17 02:12:19.309700 : IProtocol.cpp : Debug(7):
+	Writing 261 bytes to channel
+2017-Apr-17 02:12:19.329906 : IProtocol.cpp : Debug(7):
+	Writing 261 bytes to channel
+2017-Apr-17 02:12:19.350106 : IProtocol.cpp : Debug(7):
+	Writing 261 bytes to channel
+2017-Apr-17 02:12:19.370255 : IProtocol.cpp : Debug(7):
+	Writing 261 bytes to channel
+2017-Apr-17 02:12:19.390456 : IProtocol.cpp : Debug(7):
+	Writing 261 bytes to channel
+2017-Apr-17 02:12:19.410654 : IProtocol.cpp : Debug(7):
+	Writing 261 bytes to channel
+2017-Apr-17 02:12:19.430851 : IProtocol.cpp : Debug(7):
+	Writing 261 bytes to channel
+2017-Apr-17 02:12:19.451049 : IProtocol.cpp : Debug(7):
+	Writing 261 bytes to channel
+2017-Apr-17 02:12:19.471236 : IProtocol.cpp : Debug(7):
+	Writing 261 bytes to channel
+2017-Apr-17 02:12:19.491433 : IProtocol.cpp : Debug(7):
+	Writing 261 bytes to channel
+2017-Apr-17 02:12:19.511640 : IProtocol.cpp : Debug(7):
+	Writing 261 bytes to channel
+2017-Apr-17 02:12:19.531785 : IProtocol.cpp : Debug(7):
+	Writing 261 bytes to channel
+2017-Apr-17 02:12:19.551988 : IProtocol.cpp : Debug(7):
+	Writing 261 bytes to channel
+2017-Apr-17 02:12:19.572136 : IProtocol.cpp : Debug(7):
+	Writing 261 bytes to channel
+2017-Apr-17 02:12:19.592285 : IProtocol.cpp : Debug(7):
+	Writing 261 bytes to channel
+2017-Apr-17 02:12:19.612484 : IProtocol.cpp : Debug(7):
+	Writing 261 bytes to channel
+2017-Apr-17 02:12:19.632682 : IProtocol.cpp : Debug(7):
+	Writing 261 bytes to channel
+2017-Apr-17 02:12:19.652881 : IProtocol.cpp : Debug(7):
+	Writing 261 bytes to channel
+2017-Apr-17 02:12:19.673079 : IProtocol.cpp : Debug(7):
+	Writing 261 bytes to channel
+2017-Apr-17 02:12:19.693241 : IProtocol.cpp : Debug(7):
+	Writing 261 bytes to channel
+2017-Apr-17 02:12:19.713445 : IProtocol.cpp : Debug(7):
+	Writing 261 bytes to channel
+2017-Apr-17 02:12:19.733654 : IProtocol.cpp : Debug(7):
+	Writing 261 bytes to channel
+2017-Apr-17 02:12:19.753851 : IProtocol.cpp : Debug(7):
+	Writing 261 bytes to channel
+2017-Apr-17 02:12:19.774050 : IProtocol.cpp : Debug(7):
+	Writing 261 bytes to channel
+2017-Apr-17 02:12:19.794244 : IProtocol.cpp : Debug(7):
+	Writing 261 bytes to channel
+2017-Apr-17 02:12:19.814442 : IProtocol.cpp : Debug(7):
+	Writing 261 bytes to channel
+2017-Apr-17 02:12:19.834649 : IProtocol.cpp : Debug(7):
+	Writing 261 bytes to channel
+2017-Apr-17 02:12:19.841752 : CBroker.cpp : Notice(5):
+	Aligned phase to 0 (was 0) for 159 ms
+2017-Apr-17 02:12:19.841813 : CBroker.cpp : Notice(5):
+	Phase: gm for 159ms offset 00:00:00
+2017-Apr-17 02:12:19.841862 : CBroker.cpp : Notice(5):
+	Changed Phase: expiring next time timers for vvc
+2017-Apr-17 02:12:19.841889 : CBroker.cpp : Debug(7):
+	Examine timer 0 for module gm expire nexttime: 0
+2017-Apr-17 02:12:19.841915 : CBroker.cpp : Debug(7):
+	Examine timer 1 for module gm expire nexttime: 0
+2017-Apr-17 02:12:19.841942 : CBroker.cpp : Debug(7):
+	Examine timer 2 for module vvc expire nexttime: 0
+2017-Apr-17 02:12:19.841968 : CBroker.cpp : Debug(7):
+	Examine timer 3 for module vvc expire nexttime: 0
+2017-Apr-17 02:12:19.841995 : CBroker.cpp : Debug(7):
+	Performing Job
+2017-Apr-17 02:12:19.842027 : GroupManagement.cpp : Status(4):
+	Group Bitfield : 11000000000000000000000000000000
+2017-Apr-17 02:12:19.842057 : GroupManagement.cpp : Status(4):
+	Group Float : 4.2039e-45
+2017-Apr-17 02:12:19.842108 : GroupManagement.cpp : Status(4):
+	- SYSTEM STATE
+Me: explosion.ece.ncsu.edu:5001, Group: 1804289384 Leader:explosion.ece.ncsu.edu:5001
+SYSTEM NODES
+Node: explosion.ece.ncsu.edu:5001 State: Up (Me, Coordinator)
+Node: explosion.ece.ncsu.edu:5002 State: Unknown
+FID state: 0
+Current Skew: 00:00:00
+Time left in phase: 00:00:00.158649
+
+2017-Apr-17 02:12:19.842138 : GroupManagement.cpp : Debug(7):
+	Generated AYC : 3
+2017-Apr-17 02:12:19.842166 : GroupManagement.cpp : Info(6):
+	SEND: Sending out AYC
+2017-Apr-17 02:12:19.842209 : CProtocolSR.cpp : Debug(7):
+	Set Expire time: 2017-Apr-17 06:12:20.842203
+2017-Apr-17 02:12:19.842268 : IProtocol.cpp : Debug(7):
+	Writing 317 bytes to channel
+2017-Apr-17 02:12:19.842318 : GroupManagement.cpp : Info(6):
+	TIMER: Setting GlobalTimer (Premerge): 537
+2017-Apr-17 02:12:19.842349 : CBroker.cpp : Debug(7):
+	Scheduled task for timer 0
+2017-Apr-17 02:12:19.862405 : IProtocol.cpp : Debug(7):
+	Writing 317 bytes to channel
+2017-Apr-17 02:12:19.882439 : CBroker.cpp : Debug(7):
+	Handle finished: 0 For module gm
+2017-Apr-17 02:12:19.882502 : CBroker.cpp : Debug(7):
+	Module gm now has queue size: 1
+2017-Apr-17 02:12:19.882552 : CBroker.cpp : Debug(7):
+	Performing Job
+2017-Apr-17 02:12:19.882611 : GroupManagement.cpp : Warn(3):
+	Physical Topology not available. Groups will form using cyber topology only.
+2017-Apr-17 02:12:19.882645 : GroupManagement.cpp : Info(6):
+	TIMER: Setting CheckTimer (Check): 683
+2017-Apr-17 02:12:19.882674 : CBroker.cpp : Debug(7):
+	Scheduled task for timer 0
+2017-Apr-17 02:12:19.882741 : IProtocol.cpp : Debug(7):
+	Writing 317 bytes to channel
+2017-Apr-17 02:12:19.902921 : IProtocol.cpp : Debug(7):
+	Writing 317 bytes to channel
+2017-Apr-17 02:12:19.923131 : IProtocol.cpp : Debug(7):
+	Writing 317 bytes to channel
+2017-Apr-17 02:12:19.943290 : IProtocol.cpp : Debug(7):
+	Writing 317 bytes to channel
+2017-Apr-17 02:12:19.963498 : IProtocol.cpp : Debug(7):
+	Writing 317 bytes to channel
+2017-Apr-17 02:12:19.983707 : IProtocol.cpp : Debug(7):
+	Writing 317 bytes to channel
+2017-Apr-17 02:12:20.001475 : CBroker.cpp : Notice(5):
+	Phase: sc for 80ms offset 00:00:00
+2017-Apr-17 02:12:20.001527 : CBroker.cpp : Notice(5):
+	Changed Phase: expiring next time timers for gm
+2017-Apr-17 02:12:20.001574 : CBroker.cpp : Debug(7):
+	Examine timer 0 for module gm expire nexttime: 1
+2017-Apr-17 02:12:20.001628 : CBroker.cpp : Notice(5):
+	Scheduling task for next time timer: 0
+2017-Apr-17 02:12:20.001666 : CBroker.cpp : Debug(7):
+	Examine timer 1 for module gm expire nexttime: 0
+2017-Apr-17 02:12:20.001702 : CBroker.cpp : Debug(7):
+	Examine timer 2 for module vvc expire nexttime: 0
+2017-Apr-17 02:12:20.001730 : CBroker.cpp : Debug(7):
+	Examine timer 3 for module vvc expire nexttime: 0
+2017-Apr-17 02:12:20.001759 : CBroker.cpp : Debug(7):
+	Handle finished: 0 For module gm
+2017-Apr-17 02:12:20.001787 : CBroker.cpp : Debug(7):
+	Module gm now has queue size: 1
+2017-Apr-17 02:12:20.003920 : IProtocol.cpp : Debug(7):
+	Writing 317 bytes to channel
+2017-Apr-17 02:12:20.024129 : IProtocol.cpp : Debug(7):
+	Writing 317 bytes to channel
+2017-Apr-17 02:12:20.044283 : IProtocol.cpp : Debug(7):
+	Writing 317 bytes to channel
+2017-Apr-17 02:12:20.064488 : IProtocol.cpp : Debug(7):
+	Writing 317 bytes to channel
+2017-Apr-17 02:12:20.081852 : CBroker.cpp : Notice(5):
+	Phase: vvc for 1000ms offset 00:00:00
+2017-Apr-17 02:12:20.081902 : CBroker.cpp : Notice(5):
+	Changed Phase: expiring next time timers for sc
+2017-Apr-17 02:12:20.081947 : CBroker.cpp : Debug(7):
+	Examine timer 0 for module gm expire nexttime: 0
+2017-Apr-17 02:12:20.081992 : CBroker.cpp : Debug(7):
+	Examine timer 1 for module gm expire nexttime: 0
+2017-Apr-17 02:12:20.082035 : CBroker.cpp : Debug(7):
+	Examine timer 2 for module vvc expire nexttime: 0
+2017-Apr-17 02:12:20.082062 : CBroker.cpp : Debug(7):
+	Examine timer 3 for module vvc expire nexttime: 0
+2017-Apr-17 02:12:20.084696 : IProtocol.cpp : Debug(7):
+	Writing 317 bytes to channel
+2017-Apr-17 02:12:20.104902 : IProtocol.cpp : Debug(7):
+	Writing 317 bytes to channel
+2017-Apr-17 02:12:20.125108 : IProtocol.cpp : Debug(7):
+	Writing 317 bytes to channel
+2017-Apr-17 02:12:20.145263 : IProtocol.cpp : Debug(7):
+	Writing 317 bytes to channel
+2017-Apr-17 02:12:20.165469 : IProtocol.cpp : Debug(7):
+	Writing 317 bytes to channel
+2017-Apr-17 02:12:20.185675 : IProtocol.cpp : Debug(7):
+	Writing 317 bytes to channel
+2017-Apr-17 02:12:20.205881 : IProtocol.cpp : Debug(7):
+	Writing 317 bytes to channel
+2017-Apr-17 02:12:20.226087 : IProtocol.cpp : Debug(7):
+	Writing 317 bytes to channel
+2017-Apr-17 02:12:20.246261 : IProtocol.cpp : Debug(7):
+	Writing 317 bytes to channel
+2017-Apr-17 02:12:20.266468 : IProtocol.cpp : Debug(7):
+	Writing 317 bytes to channel
+2017-Apr-17 02:12:20.286672 : IProtocol.cpp : Debug(7):
+	Writing 317 bytes to channel
+2017-Apr-17 02:12:20.306878 : IProtocol.cpp : Debug(7):
+	Writing 317 bytes to channel
+2017-Apr-17 02:12:20.327084 : IProtocol.cpp : Debug(7):
+	Writing 317 bytes to channel
+2017-Apr-17 02:12:20.347264 : IProtocol.cpp : Debug(7):
+	Writing 317 bytes to channel
+2017-Apr-17 02:12:20.367472 : IProtocol.cpp : Debug(7):
+	Writing 317 bytes to channel
+2017-Apr-17 02:12:20.387680 : IProtocol.cpp : Debug(7):
+	Writing 317 bytes to channel
+2017-Apr-17 02:12:20.407886 : IProtocol.cpp : Debug(7):
+	Writing 317 bytes to channel
+2017-Apr-17 02:12:20.428093 : IProtocol.cpp : Debug(7):
+	Writing 317 bytes to channel
+2017-Apr-17 02:12:20.448267 : IProtocol.cpp : Debug(7):
+	Writing 317 bytes to channel
+2017-Apr-17 02:12:20.468474 : IProtocol.cpp : Debug(7):
+	Writing 317 bytes to channel
+2017-Apr-17 02:12:20.488681 : IProtocol.cpp : Debug(7):
+	Writing 317 bytes to channel
+2017-Apr-17 02:12:20.508888 : IProtocol.cpp : Debug(7):
+	Writing 317 bytes to channel
+2017-Apr-17 02:12:20.529095 : IProtocol.cpp : Debug(7):
+	Writing 317 bytes to channel
+2017-Apr-17 02:12:20.549270 : IProtocol.cpp : Debug(7):
+	Writing 317 bytes to channel
+2017-Apr-17 02:12:20.569476 : IProtocol.cpp : Debug(7):
+	Writing 317 bytes to channel
+2017-Apr-17 02:12:20.589683 : IProtocol.cpp : Debug(7):
+	Writing 317 bytes to channel
+2017-Apr-17 02:12:20.609890 : IProtocol.cpp : Debug(7):
+	Writing 317 bytes to channel
+2017-Apr-17 02:12:20.630097 : IProtocol.cpp : Debug(7):
+	Writing 317 bytes to channel
+2017-Apr-17 02:12:20.650271 : IProtocol.cpp : Debug(7):
+	Writing 317 bytes to channel
+2017-Apr-17 02:12:20.670478 : IProtocol.cpp : Debug(7):
+	Writing 317 bytes to channel
+2017-Apr-17 02:12:20.690683 : IProtocol.cpp : Debug(7):
+	Writing 317 bytes to channel
+2017-Apr-17 02:12:20.710826 : IProtocol.cpp : Debug(7):
+	Writing 317 bytes to channel
+2017-Apr-17 02:12:20.731027 : IProtocol.cpp : Debug(7):
+	Writing 317 bytes to channel
+2017-Apr-17 02:12:20.751236 : IProtocol.cpp : Debug(7):
+	Writing 317 bytes to channel
+2017-Apr-17 02:12:20.771444 : IProtocol.cpp : Debug(7):
+	Writing 317 bytes to channel
+2017-Apr-17 02:12:20.791660 : IProtocol.cpp : Debug(7):
+	Writing 317 bytes to channel
+2017-Apr-17 02:12:20.811868 : IProtocol.cpp : Debug(7):
+	Writing 317 bytes to channel
+2017-Apr-17 02:12:20.832077 : IProtocol.cpp : Debug(7):
+	Writing 317 bytes to channel
+2017-Apr-17 02:12:20.852261 : CProtocolSR.cpp : Warn(3):
+	Connection to explosion.ece.ncsu.edu:5002 has lost 0 messages. Attempting to reconnect.
+2017-Apr-17 02:12:21.082174 : CBroker.cpp : Notice(5):
+	Aligned phase to 0 (was 0) for 158 ms
+2017-Apr-17 02:12:21.082236 : CBroker.cpp : Notice(5):
+	Phase: gm for 158ms offset 00:00:00
+2017-Apr-17 02:12:21.082280 : CBroker.cpp : Notice(5):
+	Changed Phase: expiring next time timers for vvc
+2017-Apr-17 02:12:21.082323 : CBroker.cpp : Debug(7):
+	Examine timer 0 for module gm expire nexttime: 0
+2017-Apr-17 02:12:21.082367 : CBroker.cpp : Debug(7):
+	Examine timer 1 for module gm expire nexttime: 0
+2017-Apr-17 02:12:21.082393 : CBroker.cpp : Debug(7):
+	Examine timer 2 for module vvc expire nexttime: 0
+2017-Apr-17 02:12:21.082420 : CBroker.cpp : Debug(7):
+	Examine timer 3 for module vvc expire nexttime: 0
+2017-Apr-17 02:12:21.082446 : CBroker.cpp : Debug(7):
+	Performing Job
+2017-Apr-17 02:12:21.082479 : GroupManagement.cpp : Status(4):
+	Group Bitfield : 11000000000000000000000000000000
+2017-Apr-17 02:12:21.082516 : GroupManagement.cpp : Status(4):
+	Group Float : 4.2039e-45
+2017-Apr-17 02:12:21.082572 : GroupManagement.cpp : Status(4):
+	- SYSTEM STATE
+Me: explosion.ece.ncsu.edu:5001, Group: 1804289384 Leader:explosion.ece.ncsu.edu:5001
+SYSTEM NODES
+Node: explosion.ece.ncsu.edu:5001 State: Up (Me, Coordinator)
+Node: explosion.ece.ncsu.edu:5002 State: Unknown
+FID state: 0
+Current Skew: 00:00:00
+Time left in phase: 00:00:00.157609
+
+2017-Apr-17 02:12:21.082610 : GroupManagement.cpp : Debug(7):
+	Generated AYC : 4
+2017-Apr-17 02:12:21.082639 : GroupManagement.cpp : Info(6):
+	SEND: Sending out AYC
+2017-Apr-17 02:12:21.082668 : CConnectionManager.cpp : Warn(3):
+	Connection to explosion.ece.ncsu.edu:5002 has gone stale 
+2017-Apr-17 02:12:21.082701 : CConnectionManager.cpp : Info(6):
+	Making Fresh Connection to explosion.ece.ncsu.edu:5002
+2017-Apr-17 02:12:21.082728 : CConnectionManager.cpp : Debug(7):
+	Computing remote endpoint
+2017-Apr-17 02:12:21.084751 : CConnectionManager.cpp : Info(6):
+	Resolved: 10.76.56.78:5002
+2017-Apr-17 02:12:21.084813 : CConnectionManager.cpp : Warn(3):
+	EP = 10.76.56.78:5002
+2017-Apr-17 02:12:21.084840 : CConnectionManager.cpp : Debug(7):
+	Constructing CConnection
+2017-Apr-17 02:12:21.084908 : CProtocolSR.cpp : Debug(7):
+	Set Expire time: 2017-Apr-17 06:12:22.084903
+2017-Apr-17 02:12:21.084953 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:21.085005 : GroupManagement.cpp : Info(6):
+	TIMER: Setting GlobalTimer (Premerge): 537
+2017-Apr-17 02:12:21.085036 : CBroker.cpp : Debug(7):
+	Scheduled task for timer 0
+2017-Apr-17 02:12:21.105108 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:21.125121 : CBroker.cpp : Debug(7):
+	Handle finished: 0 For module gm
+2017-Apr-17 02:12:21.125176 : CBroker.cpp : Debug(7):
+	Module gm now has queue size: 1
+2017-Apr-17 02:12:21.125226 : CBroker.cpp : Debug(7):
+	Performing Job
+2017-Apr-17 02:12:21.125273 : GroupManagement.cpp : Warn(3):
+	Physical Topology not available. Groups will form using cyber topology only.
+2017-Apr-17 02:12:21.125316 : GroupManagement.cpp : Info(6):
+	TIMER: Setting CheckTimer (Check): 683
+2017-Apr-17 02:12:21.125345 : CBroker.cpp : Debug(7):
+	Scheduled task for timer 0
+2017-Apr-17 02:12:21.125394 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:21.145544 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:21.165736 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:21.185926 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:21.206108 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:21.226261 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:21.243161 : CBroker.cpp : Notice(5):
+	Phase: sc for 80ms offset 00:00:00
+2017-Apr-17 02:12:21.243211 : CBroker.cpp : Notice(5):
+	Changed Phase: expiring next time timers for gm
+2017-Apr-17 02:12:21.243257 : CBroker.cpp : Debug(7):
+	Examine timer 0 for module gm expire nexttime: 1
+2017-Apr-17 02:12:21.243301 : CBroker.cpp : Notice(5):
+	Scheduling task for next time timer: 0
+2017-Apr-17 02:12:21.243345 : CBroker.cpp : Debug(7):
+	Examine timer 1 for module gm expire nexttime: 0
+2017-Apr-17 02:12:21.243372 : CBroker.cpp : Debug(7):
+	Examine timer 2 for module vvc expire nexttime: 0
+2017-Apr-17 02:12:21.243399 : CBroker.cpp : Debug(7):
+	Examine timer 3 for module vvc expire nexttime: 0
+2017-Apr-17 02:12:21.243428 : CBroker.cpp : Debug(7):
+	Handle finished: 0 For module gm
+2017-Apr-17 02:12:21.243456 : CBroker.cpp : Debug(7):
+	Module gm now has queue size: 1
+2017-Apr-17 02:12:21.246443 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:21.266635 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:21.286817 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:21.306998 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:21.323521 : CBroker.cpp : Notice(5):
+	Phase: vvc for 1000ms offset 00:00:00
+2017-Apr-17 02:12:21.323572 : CBroker.cpp : Notice(5):
+	Changed Phase: expiring next time timers for sc
+2017-Apr-17 02:12:21.323626 : CBroker.cpp : Debug(7):
+	Examine timer 0 for module gm expire nexttime: 0
+2017-Apr-17 02:12:21.323672 : CBroker.cpp : Debug(7):
+	Examine timer 1 for module gm expire nexttime: 0
+2017-Apr-17 02:12:21.323711 : CBroker.cpp : Debug(7):
+	Examine timer 2 for module vvc expire nexttime: 0
+2017-Apr-17 02:12:21.323737 : CBroker.cpp : Debug(7):
+	Examine timer 3 for module vvc expire nexttime: 0
+2017-Apr-17 02:12:21.327179 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:21.347310 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:21.367492 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:21.387673 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:21.407854 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:21.428035 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:21.448217 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:21.468398 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:21.488579 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:21.508770 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:21.528951 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:21.549133 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:21.569268 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:21.589450 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:21.609640 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:21.629823 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:21.650005 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:21.670187 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:21.690349 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:21.710519 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:21.730669 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:21.750810 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:21.770949 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:21.791207 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:21.811421 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:21.831614 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:21.851796 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:21.871925 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:21.892107 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:21.912276 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:21.932457 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:21.952640 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:21.972820 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:21.993002 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:22.013185 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:22.033316 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:22.053498 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:22.073679 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:22.093862 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:22.114044 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:22.134224 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:22.154372 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:22.174552 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:22.194743 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:22.214925 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:22.235106 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:22.255283 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:22.275464 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:22.295643 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:22.315823 : IProtocol.cpp : Debug(7):
+	Writing 149 bytes to channel
+2017-Apr-17 02:12:22.323849 : CBroker.cpp : Notice(5):
+	Aligned phase to 0 (was 0) for 157 ms
+2017-Apr-17 02:12:22.323915 : CBroker.cpp : Notice(5):
+	Phase: gm for 157ms offset 00:00:00
+2017-Apr-17 02:12:22.323960 : CBroker.cpp : Notice(5):
+	Changed Phase: expiring next time timers for vvc
+2017-Apr-17 02:12:22.324006 : CBroker.cpp : Debug(7):
+	Examine timer 0 for module gm expire nexttime: 0
+2017-Apr-17 02:12:22.324047 : CBroker.cpp : Debug(7):
+	Examine timer 1 for module gm expire nexttime: 0
+2017-Apr-17 02:12:22.324074 : CBroker.cpp : Debug(7):
+	Examine timer 2 for module vvc expire nexttime: 0
+2017-Apr-17 02:12:22.324101 : CBroker.cpp : Debug(7):
+	Examine timer 3 for module vvc expire nexttime: 0
+2017-Apr-17 02:12:22.324128 : CBroker.cpp : Debug(7):
+	Performing Job
+2017-Apr-17 02:12:22.324164 : GroupManagement.cpp : Status(4):
+	Group Bitfield : 11000000000000000000000000000000
+2017-Apr-17 02:12:22.324201 : GroupManagement.cpp : Status(4):
+	Group Float : 4.2039e-45
+2017-Apr-17 02:12:22.324259 : GroupManagement.cpp : Status(4):
+	- SYSTEM STATE
+Me: explosion.ece.ncsu.edu:5001, Group: 1804289384 Leader:explosion.ece.ncsu.edu:5001
+SYSTEM NODES
+Node: explosion.ece.ncsu.edu:5001 State: Up (Me, Coordinator)
+Node: explosion.ece.ncsu.edu:5002 State: Unknown
+FID state: 0
+Current Skew: 00:00:00
+Time left in phase: 00:00:00.156596
+
+2017-Apr-17 02:12:22.324290 : GroupManagement.cpp : Debug(7):
+	Generated AYC : 5
+2017-Apr-17 02:12:22.324319 : GroupManagement.cpp : Info(6):
+	SEND: Sending out AYC
+2017-Apr-17 02:12:22.324382 : CProtocolSR.cpp : Debug(7):
+	Set Expire time: 2017-Apr-17 06:12:23.324376
+2017-Apr-17 02:12:22.324431 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:22.324483 : GroupManagement.cpp : Info(6):
+	TIMER: Setting GlobalTimer (Premerge): 537
+2017-Apr-17 02:12:22.324524 : CBroker.cpp : Debug(7):
+	Scheduled task for timer 0
+2017-Apr-17 02:12:22.344591 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:22.364606 : CBroker.cpp : Debug(7):
+	Handle finished: 0 For module gm
+2017-Apr-17 02:12:22.364669 : CBroker.cpp : Debug(7):
+	Module gm now has queue size: 1
+2017-Apr-17 02:12:22.364722 : CBroker.cpp : Debug(7):
+	Performing Job
+2017-Apr-17 02:12:22.364769 : GroupManagement.cpp : Warn(3):
+	Physical Topology not available. Groups will form using cyber topology only.
+2017-Apr-17 02:12:22.364809 : GroupManagement.cpp : Info(6):
+	TIMER: Setting CheckTimer (Check): 683
+2017-Apr-17 02:12:22.364837 : CBroker.cpp : Debug(7):
+	Scheduled task for timer 0
+2017-Apr-17 02:12:22.364891 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:22.385053 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:22.405246 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:22.425439 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:22.445640 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:22.465833 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:22.481651 : CBroker.cpp : Notice(5):
+	Phase: sc for 80ms offset 00:00:00
+2017-Apr-17 02:12:22.481701 : CBroker.cpp : Notice(5):
+	Changed Phase: expiring next time timers for gm
+2017-Apr-17 02:12:22.481747 : CBroker.cpp : Debug(7):
+	Examine timer 0 for module gm expire nexttime: 1
+2017-Apr-17 02:12:22.481791 : CBroker.cpp : Notice(5):
+	Scheduling task for next time timer: 0
+2017-Apr-17 02:12:22.481834 : CBroker.cpp : Debug(7):
+	Examine timer 1 for module gm expire nexttime: 0
+2017-Apr-17 02:12:22.481861 : CBroker.cpp : Debug(7):
+	Examine timer 2 for module vvc expire nexttime: 0
+2017-Apr-17 02:12:22.481888 : CBroker.cpp : Debug(7):
+	Examine timer 3 for module vvc expire nexttime: 0
+2017-Apr-17 02:12:22.481918 : CBroker.cpp : Debug(7):
+	Handle finished: 0 For module gm
+2017-Apr-17 02:12:22.481945 : CBroker.cpp : Debug(7):
+	Module gm now has queue size: 1
+2017-Apr-17 02:12:22.486029 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:22.506224 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:22.526369 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:22.546562 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:22.562011 : CBroker.cpp : Notice(5):
+	Phase: vvc for 1000ms offset 00:00:00
+2017-Apr-17 02:12:22.562062 : CBroker.cpp : Notice(5):
+	Changed Phase: expiring next time timers for sc
+2017-Apr-17 02:12:22.562107 : CBroker.cpp : Debug(7):
+	Examine timer 0 for module gm expire nexttime: 0
+2017-Apr-17 02:12:22.562152 : CBroker.cpp : Debug(7):
+	Examine timer 1 for module gm expire nexttime: 0
+2017-Apr-17 02:12:22.562195 : CBroker.cpp : Debug(7):
+	Examine timer 2 for module vvc expire nexttime: 0
+2017-Apr-17 02:12:22.562222 : CBroker.cpp : Debug(7):
+	Examine timer 3 for module vvc expire nexttime: 0
+2017-Apr-17 02:12:22.566764 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:22.586953 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:22.607144 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:22.627300 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:22.647490 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:22.667680 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:22.687871 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:22.708063 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:22.728255 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:22.748448 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:22.768647 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:22.788838 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:22.809045 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:22.829239 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:22.849378 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:22.869568 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:22.889772 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:22.909962 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:22.930151 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:22.950308 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:22.970498 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:22.990690 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:23.010829 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:23.031009 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:23.051201 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:23.071341 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:23.091536 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:23.111742 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:23.131933 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:23.152123 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:23.172313 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:23.192504 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:23.212696 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:23.232888 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:23.253077 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:23.273267 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:23.293455 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:23.313647 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:23.333839 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:23.354032 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:23.374223 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:23.394362 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:23.414551 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:23.434750 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:23.454880 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:23.475041 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:23.495233 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:23.515375 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:23.535567 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:23.555767 : IProtocol.cpp : Debug(7):
+	Writing 205 bytes to channel
+2017-Apr-17 02:12:23.562290 : CBroker.cpp : Notice(5):
+	Aligned phase to 0 (was 0) for 158 ms
+2017-Apr-17 02:12:23.562354 : CBroker.cpp : Notice(5):
+	Phase: gm for 158ms offset 00:00:00
+2017-Apr-17 02:12:23.562398 : CBroker.cpp : Notice(5):
+	Changed Phase: expiring next time timers for vvc
+2017-Apr-17 02:12:23.562443 : CBroker.cpp : Debug(7):
+	Examine timer 0 for module gm expire nexttime: 0
+2017-Apr-17 02:12:23.562486 : CBroker.cpp : Debug(7):
+	Examine timer 1 for module gm expire nexttime: 0
+2017-Apr-17 02:12:23.562512 : CBroker.cpp : Debug(7):
+	Examine timer 2 for module vvc expire nexttime: 0
+2017-Apr-17 02:12:23.562539 : CBroker.cpp : Debug(7):
+	Examine timer 3 for module vvc expire nexttime: 0
+2017-Apr-17 02:12:23.562566 : CBroker.cpp : Debug(7):
+	Performing Job
+2017-Apr-17 02:12:23.562612 : GroupManagement.cpp : Status(4):
+	Group Bitfield : 11000000000000000000000000000000
+2017-Apr-17 02:12:23.562643 : GroupManagement.cpp : Status(4):
+	Group Float : 4.2039e-45
+2017-Apr-17 02:12:23.562695 : GroupManagement.cpp : Status(4):
+	- SYSTEM STATE
+Me: explosion.ece.ncsu.edu:5001, Group: 1804289384 Leader:explosion.ece.ncsu.edu:5001
+SYSTEM NODES
+Node: explosion.ece.ncsu.edu:5001 State: Up (Me, Coordinator)
+Node: explosion.ece.ncsu.edu:5002 State: Unknown
+FID state: 0
+Current Skew: 00:00:00
+Time left in phase: 00:00:00.157601
+
+2017-Apr-17 02:12:23.562726 : GroupManagement.cpp : Debug(7):
+	Generated AYC : 6
+2017-Apr-17 02:12:23.562753 : GroupManagement.cpp : Info(6):
+	SEND: Sending out AYC
+2017-Apr-17 02:12:23.562797 : CProtocolSR.cpp : Debug(7):
+	Set Expire time: 2017-Apr-17 06:12:24.562792
+2017-Apr-17 02:12:23.562850 : IProtocol.cpp : Debug(7):
+	Writing 261 bytes to channel
+2017-Apr-17 02:12:23.562901 : GroupManagement.cpp : Info(6):
+	TIMER: Setting GlobalTimer (Premerge): 537
+2017-Apr-17 02:12:23.562931 : CBroker.cpp : Debug(7):
+	Scheduled task for timer 0
+2017-Apr-17 02:12:23.583019 : IProtocol.cpp : Debug(7):
+	Writing 261 bytes to channel
+2017-Apr-17 02:12:23.603016 : CBroker.cpp : Debug(7):
+	Handle finished: 0 For module gm
+2017-Apr-17 02:12:23.603071 : CBroker.cpp : Debug(7):
+	Module gm now has queue size: 1
+2017-Apr-17 02:12:23.603121 : CBroker.cpp : Debug(7):
+	Performing Job
+2017-Apr-17 02:12:23.603168 : GroupManagement.cpp : Warn(3):
+	Physical Topology not available. Groups will form using cyber topology only.
+2017-Apr-17 02:12:23.603211 : GroupManagement.cpp : Info(6):
+	TIMER: Setting CheckTimer (Check): 683
+2017-Apr-17 02:12:23.603240 : CBroker.cpp : Debug(7):
+	Scheduled task for timer 0
+2017-Apr-17 02:12:23.603298 : IProtocol.cpp : Debug(7):
+	Writing 261 bytes to channel
+2017-Apr-17 02:12:23.623416 : IProtocol.cpp : Debug(7):
+	Writing 261 bytes to channel
+2017-Apr-17 02:12:23.643629 : IProtocol.cpp : Debug(7):
+	Writing 261 bytes to channel
+2017-Apr-17 02:12:23.663829 : IProtocol.cpp : Debug(7):
+	Writing 261 bytes to channel
+2017-Apr-17 02:12:23.684029 : IProtocol.cpp : Debug(7):
+	Writing 261 bytes to channel
+2017-Apr-17 02:12:23.704230 : IProtocol.cpp : Debug(7):
+	Writing 261 bytes to channel
+2017-Apr-17 02:12:23.721057 : CBroker.cpp : Notice(5):
+	Phase: sc for 80ms offset 00:00:00
+2017-Apr-17 02:12:23.721108 : CBroker.cpp : Notice(5):
+	Changed Phase: expiring next time timers for gm
+2017-Apr-17 02:12:23.721153 : CBroker.cpp : Debug(7):
+	Examine timer 0 for module gm expire nexttime: 1
+2017-Apr-17 02:12:23.721198 : CBroker.cpp : Notice(5):
+	Scheduling task for next time timer: 0
+2017-Apr-17 02:12:23.721241 : CBroker.cpp : Debug(7):
+	Examine timer 1 for module gm expire nexttime: 0
+2017-Apr-17 02:12:23.721268 : CBroker.cpp : Debug(7):
+	Examine timer 2 for module vvc expire nexttime: 0
+2017-Apr-17 02:12:23.721295 : CBroker.cpp : Debug(7):
+	Examine timer 3 for module vvc expire nexttime: 0
+2017-Apr-17 02:12:23.721324 : CBroker.cpp : Debug(7):
+	Handle finished: 0 For module gm
+2017-Apr-17 02:12:23.721352 : CBroker.cpp : Debug(7):
+	Module gm now has queue size: 1
+2017-Apr-17 02:12:23.724380 : IProtocol.cpp : Debug(7):
+	Writing 261 bytes to channel
+2017-Apr-17 02:12:23.744581 : IProtocol.cpp : Debug(7):
+	Writing 261 bytes to channel
+2017-Apr-17 02:12:23.764790 : IProtocol.cpp : Debug(7):
+	Writing 261 bytes to channel
+2017-Apr-17 02:12:23.784991 : IProtocol.cpp : Debug(7):
+	Writing 261 bytes to channel
+2017-Apr-17 02:12:23.801370 : CBroker.cpp : Notice(5):
+	Phase: vvc for 1000ms offset 00:00:00
+2017-Apr-17 02:12:23.801415 : CBroker.cpp : Notice(5):
+	Changed Phase: expiring next time timers for sc
+2017-Apr-17 02:12:23.801444 : CBroker.cpp : Debug(7):
+	Examine timer 0 for module gm expire nexttime: 0
+2017-Apr-17 02:12:23.801471 : CBroker.cpp : Debug(7):
+	Examine timer 1 for module gm expire nexttime: 0
+2017-Apr-17 02:12:23.801499 : CBroker.cpp : Debug(7):
+	Examine timer 2 for module vvc expire nexttime: 0
+2017-Apr-17 02:12:23.801526 : CBroker.cpp : Debug(7):
+	Examine timer 3 for module vvc expire nexttime: 0
+2017-Apr-17 02:12:23.805132 : IProtocol.cpp : Debug(7):
+	Writing 261 bytes to channel
+2017-Apr-17 02:12:23.825283 : IProtocol.cpp : Debug(7):
+	Writing 261 bytes to channel
+2017-Apr-17 02:12:23.845435 : IProtocol.cpp : Debug(7):
+	Writing 261 bytes to channel
+2017-Apr-17 02:12:23.865608 : IProtocol.cpp : Debug(7):
+	Writing 261 bytes to channel
+2017-Apr-17 02:12:23.885757 : IProtocol.cpp : Debug(7):
+	Writing 261 bytes to channel
+2017-Apr-17 02:12:23.905945 : IProtocol.cpp : Debug(7):
+	Writing 261 bytes to channel
+2017-Apr-17 02:12:23.926156 : IProtocol.cpp : Debug(7):
+	Writing 261 bytes to channel
+2017-Apr-17 02:12:23.946340 : IProtocol.cpp : Debug(7):
+	Writing 261 bytes to channel
+2017-Apr-17 02:12:23.959726 : CBroker.cpp : Fatal(0):
+	Caught signal 2. Shutting Down...
+2017-Apr-17 02:12:23.959810 : CConnectionManager.cpp : Debug(7):
+	All Connections Closed
+2017-Apr-17 02:12:23.959911 : CMqttMessage.cpp : Info(6):
+	leave/DGIClient/1 disconnect— sent for delivery with token 13
+2017-Apr-17 02:12:23.959997 : CMqttAdapter.cpp : Info(6):
+	MQTT client DGIClient has delivered message 13
+2017-Apr-17 02:12:23.960072 : CMqttAdapter.cpp : Status(4):
+	MQTT message receivedleave/DGIClient/1:disconnect
+2017-Apr-17 02:12:23.960103 : CMqttAdapter.cpp : Status(4):
+	MQTT message receivedleave/DGIClient/1:disconnect
+2017-Apr-17 02:12:23.960135 : CMqttAdapter.cpp : Status(4):
+	Received a leave message for device: DGIClient
+2017-Apr-17 02:12:23.960172 : CDeviceManager.cpp : Warn(3):
+	Could not remove the device DGIClient from the  device manager: no such device exists.
+2017-Apr-17 02:12:24.160340 : CAdapterFactory.cpp : Info(6):
+	Removed the adapter: DGIClient
+2017-Apr-17 02:12:24.160421 : CAdapterFactory.cpp : Status(4):
+	The adapter i/o service has stopped.
