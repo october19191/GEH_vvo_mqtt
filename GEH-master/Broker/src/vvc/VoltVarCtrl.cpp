@@ -67,10 +67,10 @@ VVCAgent::~VVCAgent()
 /////////////////////////////////////////////////////////
 int VVCAgent::Run()
 {	
-  float sst_1 = device::CDeviceManager::Instance().GetNetValue("LVSST_1", "AOUT/Ac_Pwr_Value");
-  std::cout<< "Real Power got from LVSST_1 is " << sst_1 << std::endl;
-  float sst_10 = device::CDeviceManager::Instance().GetNetValue("LVSST_1", "AOUT/Re_Pwr_Value");
-  std::cout<< "Reactive Power got from LVSST_1 is " << sst_10 << std::endl;
+  //float sst_1 = device::CDeviceManager::Instance().GetNetValue("LVSST_1", "AOUT/Ac_Pwr_Value");
+  //std::cout<< "Real Power got from LVSST_1 is " << sst_1 << std::endl;
+  //float sst_10 = device::CDeviceManager::Instance().GetNetValue("LVSST_1", "AOUT/Re_Pwr_Value");
+  //std::cout<< "Reactive Power got from LVSST_1 is " << sst_10 << std::endl;
   std::cout<< " --------------------VVC ---------------------------------" << std::endl; 
   CBroker::Instance().Schedule("vvc",
       boost::bind(&VVCAgent::FirstRound, this, boost::system::error_code()));
@@ -147,10 +147,16 @@ void VVCAgent::HandleGradient(const GradientMessage & m, CPeerNode peer)
     Logger.Trace << __PRETTY_FUNCTION__ << std::endl;
     Logger.Notice << "Got Gradients from "<< peer.GetUUID() << std::endl;
     Logger.Notice << "size of vector "<< m.gradient_value_size() << std::endl;
-    Logger.Notice << "the 1st element = " << m.gradient_value(0) <<std::endl;
+    using namespace arma;
+    Pload_vector = zeros(m.gradient_value_size(),1); 
+    for (int i = 0; i < m.gradient_value_size(); i++)
+    {
+	  Pload_vector(i,0) = m.gradient_value(i);
+    }
     
+	Pload_vector.save("Pload_vec.mat");// must be ROOT to execute
+	
 }
-
 
 // HandlePeerlist Implementation
 void VVCAgent::HandlePeerList(const gm::PeerListMessage & m, CPeerNode peer)
@@ -433,405 +439,23 @@ for (int i = 0; i < Lbr && ja<Y_return.Lnum_a && jb<Y_return.Lnum_b && jc<Y_retu
 }
 
 
-/////*********read from RSCAD output***********/////
-
-//Phase A	
-// Reading Pload
-
-
-std::set<device::CDevice::Pointer> ploadaSet;
-
-//retrieve the set of Phase A load devices
-ploadaSet = device::CDeviceManager::Instance().GetDevicesOfType("Pload_a");
-if( ploadaSet.empty() )
-{
-  cout << "No Load Phase A from Adapter!" << endl;
-}
-try
-{
-  BOOST_FOREACH(device::CDevice::Pointer ploada, ploadaSet)
+// reading P load
+//std::cout << Pload_vector.st() << std::endl;
+bool status = Pload_vector.load("Pload_vec.mat");
+if (status == true)
   {
-    float xx = ploada->GetState("pload");
-    cout << " Phase A Load (MW) =  " << xx << "\n";
-    cout << "The Device ID is " << ploada->GetID() << endl;
-    // SST1
-    if (ploada->GetID()=="Pl1_a" && xx == 10)
-    {
-      cout << "Signal not updated!" << endl;
-    }
-    else if (ploada->GetID()=="Pl1_a")
-    {
-      Dl(1,6) = (double)xx*1.0;//ratio depends on the signal from RSCAD
-      cout << "Phase A load for SST1 found:   " << Dl(1,6) <<" kW" << endl;
-    }
-    else
-    {}
-    
-    // SST2
-    if (ploada->GetID()=="Pl2_a" && xx == 10)
-    {
-      cout << "Signal not updated!" << endl;
-    }
-    else if (ploada->GetID()=="Pl2_a")
-    {
-      Dl(2,6) = (double)xx*1.0;
-      cout << "Phase A load for SST2 found:   " << Dl(2,6) <<" kW" << endl;
-    }
-    else
-    {}
-    
-    // SST3
-    if (ploada->GetID()=="Pl3_a" && xx == 10)
-    {
-      cout << "Signal not updated!" << endl;
-    }
-    else if (ploada->GetID()=="Pl3_a")
-    {
-      Dl(3,6) = (double)xx*1.0;
-      cout << "Phase A load for SST3 found:   " << Dl(3,6) <<" kW" << endl;
-    }
-    else
-    {}
-    
-  }  
-  //cout << Dl.col(6) << endl;
-}
-catch(std::exception & e)
-{
-  cout << "Error! Load Phase A did not recognize OUTPUT state!" << endl;
-}
-
-
-
-std::set<device::CDevice::Pointer> ploadbSet;
-
-//retrieve the set of Phase B load devices
-ploadbSet = device::CDeviceManager::Instance().GetDevicesOfType("Pload_b");
-if( ploadbSet.empty() )
-{
-  cout << "No Load Phase B from Adapter!" << endl;
-}
-try
-{
-  BOOST_FOREACH(device::CDevice::Pointer ploadb, ploadbSet)
-  {
-    float xx = ploadb->GetState("pload");
-    cout << " Phase B Load (MW) =  " << xx << "\n";
-    cout << "The Device ID is " << ploadb->GetID() << endl;
-    
-    // SST1
-    if (ploadb->GetID()=="Pl1_b" && xx == 10)
-    {
-      cout << "Signal not updated!" << endl;
-    }
-    else if (ploadb->GetID()=="Pl1_b")
-    {
-      Dl(1,8) = (double)xx*1.0;
-      cout << "Phase B load for SST1 found:   " << Dl(1,8) <<" kW" << endl;
-    }
-    else
-    {}
-    
-    // SST2
-    if (ploadb->GetID()=="Pl2_b" && xx == 10)
-    {
-      cout << "Signal not updated!" << endl;
-    }
-    else if (ploadb->GetID()=="Pl2_b")
-    {
-      Dl(2,8) = (double)xx*1.0;
-      cout << "Phase B load for SST2 found:   " << Dl(2,8) <<" kW" << endl;
-    }
-    else
-    {}
-   
-    // SST3
-    if (ploadb->GetID()=="Pl3_b" && xx == 10)
-    {
-      cout << "Signal not updated!" << endl;
-    }
-    else if (ploadb->GetID()=="Pl3_b")
-    {
-      Dl(3,8) = (double)xx*1.0;
-      cout << "Phase B load for SST3 found:   " << Dl(3,8) <<" kW" << endl;
-    }
-    else
-    {}
-    
-  } 
-  //cout << Dl.col(8) << endl;
-}
-catch(std::exception & e)
-{
-  cout << "Error! Load Phase B did not recognize OUTPUT state!" << endl;
-}
-
-
-
-std::set<device::CDevice::Pointer> ploadcSet;
-
-//retrieve the set of Phase C load devices
-ploadcSet = device::CDeviceManager::Instance().GetDevicesOfType("Pload_c");
-if( ploadcSet.empty() )
-{
-  cout << "No Load Phase C from Adapter!" << endl;
-}
-try
-{
-  BOOST_FOREACH(device::CDevice::Pointer ploadc, ploadcSet)
-  {
-    float xx = ploadc->GetState("pload");
-    cout << " Phase C Load (MW) =  " << xx << "\n";
-    cout << "The Device ID is " << ploadc->GetID() << endl;
-    
-    // SST1
-    if (ploadc->GetID()=="Pl1_c" && xx == 10)
-    {
-      cout << "Signal not updated!" << endl;
-    }
-    else if (ploadc->GetID()=="Pl1_c")
-    {
-      Dl(1,10) = (double)xx*1.0;
-      cout << "Phase C load for SST1 found:   " << Dl(1,10) <<" kW" << endl;
-    }
-    else
-    {}
-    
-    // SST2
-    if (ploadc->GetID()=="Pl2_c" && xx == 10)
-    {
-      cout << "Signal not updated!" << endl;
-    }
-    else if (ploadc->GetID()=="Pl2_c")
-    {
-      Dl(2,10) = (double)xx*1.0;
-      cout << "Phase C load for SST2 found:   " << Dl(2,10) <<" kW" << endl;
-    }
-    else
-    {}
-    
-    // SST3
-    if (ploadc->GetID()=="Pl3_c" && xx == 10)
-    {
-      cout << "Signal not updated!" << endl;
-    }
-    else if (ploadc->GetID()=="Pl3_c")
-    {
-      Dl(3,10) = (double)xx*1.0;
-      cout << "Phase C load for SST3 found:   " << Dl(3,10) <<" kW" << endl;
-    }
-    else
-    {}
-    
+	  std::cout << "Pload vector from Slave VVO ... SSTI SSTII SSTIII ..." << std::endl;
+	  std::cout << Pload_vector.st() << std::endl;
+	  Dl(0,6) = Pload_vector.at(0,0);
+	  Dl(1,6) = Pload_vector.at(1,0);
+	  Dl(2,6) = Pload_vector.at(2,0);
+	  Dl.col(8) = Dl.col(6);
+	  Dl.col(10) = Dl.col(6);
   }
-  //cout << Dl.col(10) << endl;
-}
-catch(std::exception & e)
-{
-  cout << "Error! Load Phase C did not recognize OUTPUT state!" << endl;
-}
-// end of Pload reading
-
-// SST reading from RSCAD
-std::set<device::CDevice::Pointer> qsstaSet;
-
-//retrieve the set of Phase A load devices
-qsstaSet = device::CDeviceManager::Instance().GetDevicesOfType("Sst_a");
-if( qsstaSet.empty() )
-{
-  cout << "No Q load Phase A from Adapter!" << endl;
-}
-try
-{
-  BOOST_FOREACH(device::CDevice::Pointer qssta, qsstaSet)
+  else
   {
-    float xx = qssta->GetState("gateway");
-    cout << " Phase A Load (MVar) =  " << xx << "\n";
-    cout << "The Device ID is " << qssta->GetID() << endl;
-    // SST1
-    if (qssta->GetID()=="SST1_a" && xx == 0)
-    {
-      cout << "Signal not updated!" << endl;
-    }
-    else if (qssta->GetID()=="SST1_a")
-    {
-      Dl(1,7) = (double)xx*1.0;//ratio depends on the signal from RSCAD
-      cout << "Phase A load for SST1 found:   " << Dl(1,7) <<" kVar" << endl;
-    }
-    else
-    {}
-    
-    // SST2
-    if (qssta->GetID()=="SST2_a" && xx == 0)
-    {
-      cout << "Signal not updated!" << endl;
-    }
-    else if (qssta->GetID()=="SST2_a")
-    {
-      Dl(2,7) = (double)xx*1.0;
-      cout << "Phase A load for SST2 found:   " << Dl(2,7) <<" kVar" << endl;
-    }
-    else
-    {}
-    
-    // SST3
-    if (qssta->GetID()=="SST3_a" && xx == 0)
-    {
-      cout << "Signal not updated!" << endl;
-    }
-    else if (qssta->GetID()=="SST3_a")
-    {
-      Dl(3,7) = (double)xx*1.0;
-      cout << "Phase A load for SST3 found:   " << Dl(3,7) <<" kVar" << endl;
-    }
-    else
-    {}
-    
-    
-  }  
-  //cout << Dl.col(6) << endl;
-}
-catch(std::exception & e)
-{
-  cout << "Error! Q Load Phase A did not recognize OUTPUT state!" << endl;
-}
-
-
-
-std::set<device::CDevice::Pointer> qsstbSet;
-
-//retrieve the set of Phase B load devices
-qsstbSet = device::CDeviceManager::Instance().GetDevicesOfType("Sst_b");
-if( qsstbSet.empty() )
-{
-  cout << "No Q load Phase B from Adapter!" << endl;
-}
-try
-{
-  BOOST_FOREACH(device::CDevice::Pointer qsstb, qsstbSet)
-  {
-    float xx = qsstb->GetState("gateway");
-    cout << " Phase B Load (MVar) =  " << xx << "\n";
-    cout << "The Device ID is " << qsstb->GetID() << endl;
-    
-    // SST1
-    if (qsstb->GetID()=="SST1_b" && xx == 0)
-    {
-      cout << "Signal not updated!" << endl;
-    }
-    else if (qsstb->GetID()=="SST1_b")
-    {
-      Dl(1,9) = (double)xx*1.0;
-      cout << "Phase B load for SST1 found:   " << Dl(1,9) <<" kVar" << endl;
-    }
-    else
-    {}
-    
-    // SST2
-    if (qsstb->GetID()=="SST2_b" && xx == 0)
-    {
-      cout << "Signal not updated!" << endl;
-    }
-    else if (qsstb->GetID()=="SST2_b")
-    {
-      Dl(2,9) = (double)xx*1.0;
-      cout << "Phase B load for SST2 found:   " << Dl(2,9) <<" kVar" << endl;
-    }
-    else
-    {}
-   
-    // SST3
-    if (qsstb->GetID()=="SST3_b" && xx == 0)
-    {
-      cout << "Signal not updated!" << endl;
-    }
-    else if (qsstb->GetID()=="SST3_b")
-    {
-      Dl(3,9) = (double)xx*1.0;
-      cout << "Phase B load for SST3 found:   " << Dl(3,9) <<" kVar" << endl;
-    }
-    else
-    {}
-    
-    
-  } 
-  //cout << Dl.col(8) << endl;
-}
-catch(std::exception & e)
-{
-  cout << "Error! Q Load Phase B did not recognize OUTPUT state!" << endl;
-}
-
-
-
-std::set<device::CDevice::Pointer> qsstcSet;
-
-//retrieve the set of Phase C load devices
-qsstcSet = device::CDeviceManager::Instance().GetDevicesOfType("Sst_c");
-if( qsstcSet.empty() )
-{
-  cout << "No Q load Phase C from Adapter!" << endl;
-}
-try
-{
-  BOOST_FOREACH(device::CDevice::Pointer qsstc, qsstcSet)
-  {
-    float xx = qsstc->GetState("gateway");
-    cout << " Phase C Load (MVar) =  " << xx << "\n";
-    cout << "The Device ID is " << qsstc->GetID() << endl;
-    
-    // SST1
-    if (qsstc->GetID()=="SST1_c" && xx == 0)
-    {
-      cout << "Signal not updated!" << endl;
-    }
-    else if (qsstc->GetID()=="SST1_c")
-    {
-      Dl(1,11) = (double)xx*1.0;
-      cout << "Phase C load for SST1 found:   " << Dl(1,11) <<" kVar" << endl;
-    }
-    else
-    {}
-    
-    // SST2
-    if (qsstc->GetID()=="SST2_c" && xx == 0)
-    {
-      cout << "Signal not updated!" << endl;
-    }
-    else if (qsstc->GetID()=="SST2_c")
-    {
-      Dl(2,11) = (double)xx*1.0;
-      cout << "Phase C load for SST2 found:   " << Dl(2,11) <<" kVar" << endl;
-    }
-    else
-    {}
-    
-    // SST3
-    if (qsstc->GetID()=="SST3_c" && xx == 0)
-    {
-      cout << "Signal not updated!" << endl;
-    }
-    else if (qsstc->GetID()=="SST3_c")
-    {
-      Dl(3,11) = (double)xx*1.0;
-      cout << "Phase C load for SST3 found:   " << Dl(3,11) <<" kVar" << endl;
-    }
-    else
-    {}
-    
+	  std::cout <<" Pload from slave VVO not received ... keep default Pload ... "<<std::endl;
   }
-  //cout << Dl.col(10) << endl;
-}
-catch(std::exception & e)
-{
-  cout << "Error! Q Load Phase C did not recognize OUTPUT state!" << endl;
-}
-
-
-// end of SST reading
-
-// end of reading from RSCAD
-
 
 
 VPQ dpf_re = DPF_return3(Dl, Z);
