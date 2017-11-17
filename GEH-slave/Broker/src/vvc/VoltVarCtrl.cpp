@@ -333,7 +333,36 @@ void VVCAgent::vvc_slave()
             peer.Send(mm);
 	    
 	}
-  using namespace arma;
+	
+	
+//read Pload from mqtt
+//float sst_1 = device::CDeviceManager::Instance().GetNetValue("LVSST1", "AOUT/Ac_Pwr_Fb");
+float sst_1 = device::CDeviceManager::Instance().GetNetValue("SST1", "AOUT/Active_Pwr_Fb");
+std::cout<< "Real Power got from SST is " << sst_1 << std::endl;
+
+using namespace arma;
+  //for Point to Point use
+  CPeerNode peer_master = CPeerNode("explosion.ece.ncsu.edu:5001");  //create an object of CpeerNode and set the UUID / hostname to the peer you want
+  mat Pload;
+  double P_LVSST1, P_LVSST2, P_LVSST3;
+  P_LVSST1 = sst_1;
+  P_LVSST2 = sst_1;
+  P_LVSST3 = sst_1;
+  Pload << P_LVSST1 << P_LVSST2 << P_LVSST3 << endr;
+  Pload = Pload.t();//has to be in column!
+  ModuleMessage mg_s = Gradient(Pload);
+  if (sst_1>-10)
+  {
+  peer_master.Send(mg_s);}
+  else{
+	  std::cout<< "Real Power reading not sent to Master ... " <<std::endl;
+  }
+
+//send to mqtt
+
+	
+	
+	
   double sst1_cmd; 
   double sst2_cmd;
   double sst3_cmd;
@@ -355,38 +384,65 @@ void VVCAgent::vvc_slave()
 	  sst3_cmd = 0;
   }
 
-  std::cout << "SSTs under Slave #1: SST1 SST2 SST3 \n" << endl;
-  device::CDevice::Pointer dev;
-  std::set<device::CDevice::Pointer> devices;
-  devices = device::CDeviceManager::Instance().GetDevicesOfType("Sst_a");
-  try
-  {
-    BOOST_FOREACH(device::CDevice::Pointer dev, devices)
-    {
-    if (dev->GetID()=="SST1_a")
-    {
-      dev->SetCommand("gateway",(float)sst1_cmd);
-      Logger.Notice << "Command sent to :" << dev->GetID() << " is " << sst1_cmd << std::endl;
-    }else if (dev->GetID()=="SST2_a")
-    {
-      dev->SetCommand("gateway",(float)sst2_cmd);
-      Logger.Notice << "Command sent to :" << dev->GetID() << " is " << sst2_cmd << std::endl;
-    }else if (dev->GetID()=="SST3_a")
-    {
-      dev->SetCommand("gateway",(float)sst3_cmd);
-      Logger.Notice << "Command sent to :" << dev->GetID() << " is " << sst3_cmd << std::endl;
-    }
-    else
-    {
-    }
-   
-    }//end of foreach
-  }
-  catch(std::exception & e)
-  {
-    std::cout << "Error! Could not set command to Phase A SST!" << std::endl;
+std::cout << "SSTs under Slave #1: SST1 SST2 SST3 \n" << endl;
+try
+{
+    	std::set<device::CDevice::Pointer> sst000;
+	//SST1
+        sst000 = device::CDeviceManager::Instance().GetDevicesOfType("SST1");
+	if(!sst000.empty())
+	{
+		std::cout<< "Try to send Qsst to TYPE SST1 " << std::endl;
+		device::CDevice::Pointer dev1 = *sst000.begin();
+		std::string output;
+		float cmd_test;
+        	output = "Detected MQTT Device " + dev1->GetID() + "\n";
+		Logger.Status << output << std::endl;
+		cmd_test = sst1_cmd;
+		dev1->SetCommand("AIN/Reactive_Pwr_cmd", cmd_test);//
+	}
+	else{
+		std::cout<< "Couldn't find device type : SST1 " << std::endl;
+	}
+	//SST2
+	sst000 = device::CDeviceManager::Instance().GetDevicesOfType("SST2");
+	if(!sst000.empty())
+	{
+		std::cout<< "Try to send Qsst to TYPE SST2 " << std::endl;
+		device::CDevice::Pointer dev1 = *sst000.begin();
+		std::string output;
+		float cmd_test;
+        	output = "Detected MQTT Device " + dev1->GetID() + "\n";
+		Logger.Status << output << std::endl;
+		cmd_test = sst2_cmd;
+		dev1->SetCommand("AIN/Reactive_Pwr_cmd", cmd_test);//
+	}
+	else{
+		std::cout<< "Couldn't find device type : SST2 " << std::endl;
+	}
+	//SST3
+	sst000 = device::CDeviceManager::Instance().GetDevicesOfType("SST3");
+	if(!sst000.empty())
+	{
+		std::cout<< "Try to send Qsst to TYPE SST3 " << std::endl;
+		device::CDevice::Pointer dev1 = *sst000.begin();
+		std::string output;
+		float cmd_test;
+        	output = "Detected MQTT Device " + dev1->GetID() + "\n";
+		Logger.Status << output << std::endl;
+		cmd_test = sst3_cmd;
+		dev1->SetCommand("AIN/Reactive_Pwr_cmd", cmd_test);//
+	}
+	else{
+		std::cout<< "Couldn't find device type : SST3 " << std::endl;
+	}
+}
+catch(std::exception & e)
+{
+    //std::cout << "Error! Could not set command to Phase A SST!" << std::endl;
   }  
 
+	
   
 }// end of vvc_slave
 
